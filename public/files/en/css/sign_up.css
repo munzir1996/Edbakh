@@ -1,0 +1,480 @@
+.sign_up_logo {
+    width: 94px;
+    height: 43px;
+    position: relative;
+    top: -7px;
+    margin-left: 1rem !important;
+}
+
+.steps li:hover {
+    cursor: pointer;
+}
+
+.checkout_container input:focus, .checkout_container select:focus {
+    outline: none;
+}
+
+.summary_submit_btn {
+    padding: 8px 32px;
+    line-height: 1.3;
+    font-size: 14px;
+    height: 51.3px;
+    border-radius: 2px;
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background-color: #4AA047;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.2s ease-in-out;
+}
+
+.price_breakdown {
+    background-color: transparent;
+    color: #303236;
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+    padding: 0;
+    font-size: 14px;
+}
+
+.form_divider {
+    margin: 25px 0;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+}
+
+.summary_value {
+    color: #6a6d75;
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.summary_label_change {
+    color: #4AA047;
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.summary_label_change:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.summary_label {
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+    color: #303236;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.summery_row {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.order_summery_container {
+    box-sizing: border-box;
+    width: auto;
+    padding: 20px;
+    background-color: #fafbfc;
+    border: 1px solid #e4e6eb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.terms_container {
+    padding-left: 3px;
+    line-height: 20px;
+    margin-bottom: 50px;
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.checkout_container .terms_link {
+    font-weight: 700;
+    color: #4AA047;
+}
+
+.checkout_label {
+    display: block;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #303236;
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.checkout_input {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+    padding: 0 10px;
+    border-radius: 3px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #d3d5db;
+    font-size: 15px;
+    color: #6a6d75;
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+}
+
+
+.checkout_container h4{
+    color: #303236;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+}
+
+.checkout_container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.coupon_panel {
+    background-color: #4AA047;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+    font-weight: 200;
+}
+
+#footer {
+    height: 300px;
+    background-color: #4AA047;
+}
+
+.feature p {
+    margin: 0;
+    font-size: 14px;
+    color: #d3f2d2;
+    line-height: 1.6;
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+}
+
+.feature h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    font-family: "Cera Pro","HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+}
+
+.feature {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px #d3f2d2 solid;
+    border-radius: 4px;
+    margin: 0 10px;
+    padding: 0 25px;
+    vertical-align: top;
+    min-height: 175px;
+    float: none;
+    width: 290px;
+}
+
+.feature_container {
+    text-align: center;
+    padding: 60px 0 10px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.copy_right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copy_right {
+    padding: 10px 0;
+    background-color: #4AA047;
+    color: #fff;
+    font-size: 12px;
+}
+
+.sign_up_doc a {
+    text-decoration: none;
+    color: #4AA047;
+}
+
+.sign_up_doc {
+    box-sizing: border-box;
+    margin-top: 10px;
+    color: #a6a6a6;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    padding: 0 35px;
+}
+
+.sign_up_btn {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 2px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    line-height: 47.88px;
+    height: 47.88px;
+    padding: 0 35px;
+    display: inline-block;
+    text-decoration: none;
+    border: 0px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background-color: #4AA047;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.sign_up_label {
+    display: block;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #303236;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.sign_up_input {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+    padding: 0 10px;
+    font-size: 16px;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+    border-radius: 3px;
+    width: 100%;
+    line-height: 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #d3d5db;
+    color: #6a6d75;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.sign_up_img {
+    width: 100%;
+    max-width: 320px;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+}
+
+.sub_title {
+    font-size: 16px;
+    color: #6a6d75;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 48px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.sign_up_title {
+    margin-top: 30px;
+}
+
+.logo_container {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.registration_header {
+    height: auto;
+    padding: 10px 0;
+    color: #6a6d75;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 16px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+    width: auto !important;
+}
+
+.registration_header_content {
+    min-height: 48px;
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+}
+
+.steps {
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.steps li {
+    position: relative;
+    float: left;
+}
+
+.steps li+li {
+    margin-left: 67px;
+}
+
+.steps li+li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 32px;
+    height: 0;
+    margin-left: -52px;
+    margin-top: -1px;
+    border: solid #d3d5db 1px;
+    border-bottom: none;
+}
+
+.step_number {
+    display: inline-block;
+    line-height: 1.5;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid #6a6d75 1px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    margin-right: 10px;
+}
+
+.step_number::after {
+    content: attr(data-number);
+    display: block;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.step_text {
+    display: inline-block;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+    top: -2px;
+}
+
+li.active .step_number {
+    background-color: #4AA047;
+    color: white;
+    border-color: #4AA047;
+}
+
+li.active .step_text {
+    font-weight: 500;
+    color: #4AA047;
+}
+
+/*Tab*/
+
+/*========*/
+
+@media (max-width: 961px) and (min-width: 768px){
+
+
+}
+
+/*Phone*/
+
+@media (max-width: 767px){
+
+    .copy_right {
+        display: none;
+    }
+
+    .sign_up_img_container {
+        text-align: center !important;
+    }
+
+    .registration_header {
+        padding: 2px 0;
+        margin-bottom: 20px;
+    }
+
+    .registration_header_content {
+        width: auto;
+    }
+
+    .steps li+li {
+        margin-left: 24px;
+    }
+
+    .steps {
+        position: absolute;
+        right: 10px;
+    }
+
+    .step_text {
+        display: none;
+    }
+
+    .logo_container {
+        float: left;
+        padding: 4px 0 5px;
+        margin-left: 16px;
+    }
+
+    .steps li+li:after {
+        width: 16px;
+        margin-top: 0;
+        margin-left: -26px;
+    }
+
+}

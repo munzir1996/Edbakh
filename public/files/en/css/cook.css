@@ -1,0 +1,176 @@
+.recipe_link h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6a6d75;
+}
+
+.recipe_link h3 {
+    font-size: 16px;
+}
+
+.recipe_image_link {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.filter_btn {
+    font-size: 16px;
+    line-height: 54.72px;
+    height: 54.72px;
+    padding: 0 40px;
+    margin-top: 30px;
+    background-color: #4AA047;
+    border-color: #4AA047;
+    border-radius: 2px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: content-box;
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.filter_btn:hover {
+    color: #fff;
+}
+
+.accordion_body a {
+    color: #6a6d75;
+}
+
+.accordion_group h2 .icon:hover {
+    cursor: pointer;
+}
+
+.accordion_group h2 .icon {
+    margin-right: 10px;
+    float: right;
+    color: #4AA047;
+    display: inline-block;
+}
+
+.accordion_group h2 {
+    font-size: 16px;
+}
+
+.accordion_group {
+    margin-bottom: 30px;
+    padding-top: 15px;
+    border-top: solid #d3d5db 1px;
+}
+
+.holder {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px;
+}
+
+.search_btn {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    line-height: 47.88px;
+    height: 47.88px;
+    border-radius: 2px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background-color: #4AA047;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.search_input {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+    padding: 0 10px;
+    border-radius: 3px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #d3d5db;
+    font-size: 15px;
+    color: #6a6d75;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.cookbook_title {
+    font-size: 24px;
+    color: #4AA047;
+}
+
+.search_section {
+    background: #f7f7f7;
+    padding: 10px 0;
+    border-bottom: solid 1px #e4e6eb;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+}
+
+h1 {
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+}
+
+/*tab*/
+
+@media (max-width: 961px) and (min-width: 768px){
+
+
+}
+
+/*Phone*/
+
+@media (max-width: 767px){
+
+    .recipe_container {
+        text-align: center;
+    }
+
+    .btn_container {
+        text-align: center;
+    }
+
+    .filter_btn {
+        margin: 15px auto;
+    }
+
+    .search_input {
+        margin-bottom: 10px;
+    }
+
+    .hide_mobile {
+        display: none;
+    }
+
+}

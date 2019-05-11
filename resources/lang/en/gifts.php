@@ -1,0 +1,42 @@
+<?php
+
+
+return  [
+
+    'title' => 'The Gift of Home Cooking',
+    'currency' => 'SR',
+    'card_text' => 'Meal E-Gift Card',
+    'website_name' => 'Edbakh',
+    'amount' => 'Gift Amount',
+    'type' => 'Gift Type',
+    'home_type' => 'Print at home',
+    'email_type' => 'Email to recipient',
+    'message_type' => 'Send Message to recipient',
+    'quantity' => 'Quantity',
+    'from' => 'From',
+    'to' => 'Send Gift To',
+    'on' => 'Send Gift On',
+    'your_name' => 'Your Name',
+    'name' => 'Recipient\'s name',
+    'email' => 'Recipient\'s email',
+    'January' => 'January',
+    'February' => 'February',
+    'March' => 'March',
+    'April' => 'April',
+    'May' => 'May',
+    'June' => 'June',
+    'July' => 'July',
+    'August' => 'August',
+    'September' => 'September',
+    'October' => 'October',
+    'November' => 'November',
+    'December' => 'December',
+    'message' => 'Gift Message',
+    'message_text' => 'I hope you enjoy the gift!',
+    'message_type2' => 'Message Type',
+    'phone_number' => 'Recipient\'s Phone Number',
+    'sms' => 'SMS Message',
+    'whatsapp' => 'WhatsApp Message',
+    'send' => 'Send The Gift',
+
+];

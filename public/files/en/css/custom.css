@@ -1,0 +1,2389 @@
+html,body
+{
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    /*overflow-x: hidden !important;*/
+}
+
+@font-face {
+    font-family: Cera Pro;
+    src: url("../fonts/Cera Pro Regular.otf");
+}
+
+.btn-orange {
+    background-color: #4AA047 ;
+    border-color: #4AA047;
+}
+
+.get-cooking-btn {
+    border-radius: 2px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: content-box;
+    display: inline-block;
+    text-decoration: none;
+    border: 0px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    line-height: 54.72px;
+    height: 54.72px;
+    padding: 0 40px;
+    margin-top: 35px;
+}
+
+.btn-header {
+    font-size: 14px !important;
+    line-height: 40px !important;
+    height: 40px !important;
+    padding: 0 20px !important;
+}
+
+.logo {
+    width: 94px;
+    height: 43px;
+    position: relative;
+    top: -7px;
+}
+
+.step-title {
+    font-size: 46px;
+    font-weight: bold;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    line-height: normal;
+}
+
+.step-text {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 40px;
+    color: #6a6d75;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.inside-title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+}
+
+.partial-inside-title {
+    margin-bottom: 9px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    line-height: normal;
+}
+
+.inside-text {
+    font-size: 18px;
+    line-height: 26px;
+    color: #6a6d75;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 400;
+}
+
+.in-box-panel {
+    background-color: #fff;
+    padding: 30px 14px 30px 14px;
+}
+
+.in-box-title {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    letter-spacing: -0.3px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #4AA047;
+    margin-bottom: 15px !important;
+    width: 350px;
+}
+
+.in-box-area ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.in-box-area ul li {
+    padding: 4px 25px;
+}
+
+.in-box-list-icon {
+    margin-right: 5px;
+    color: #4AA047;
+}
+
+.in-box-btn {
+    cursor: pointer;
+    border: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 400;
+    font-family: Montserrat, Verdana, Geneva, sans-serif;
+    letter-spacing: -0.3px;
+    min-width: 120px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #4AA047;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.in-box-btn:hover {
+    color: #fff;
+}
+
+.start-price-panel {
+    margin-top: 70px;
+}
+
+.start-price-title {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    line-height: normal;
+}
+
+.start-price-text {
+    color: #6a6d75;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.start-price-btn {
+    display: inline-block;
+    background-color: #4AA047;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 61.56px;
+    height: 61.56px;
+    padding: 0 56px;
+    margin-bottom: 70px;
+}
+
+.start-price-btn:hover {
+    color: #ffffff;
+    background-color: #4AA047;
+}
+
+
+.footer-text {
+    display: block;
+    color: #343434;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.footer-text2 {
+    color: #343434;
+    font-size: 15px;
+
+    text-transform: capitalize;
+}
+
+.footer-text2:hover {
+    color: #343434;
+    cursor: default;
+}
+
+.footer-text:hover {
+    color: #4AA047;
+}
+
+
+.footer-title {
+    display: block;
+    color: #4AA047;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.footer-title:hover {
+    cursor: default;
+}
+
+.footer-link {
+    color: #4AA047;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.footer-link:hover {
+    color: #4AA047;
+    cursor: pointer;
+}
+
+
+.footer-email-input{
+    box-sizing: content-box;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    box-shadow: inset 0 0 0 1px #e4e6eb;
+    color: #6a6d75;
+    padding: 10px 15px;
+    margin-top: 0;
+    background-color: #ffffff;
+    height: 20px;
+    line-height: 20px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 14px;
+    float: left;
+    width: 245px;
+}
+
+.footer-submit-btn {
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    box-sizing: content-box;
+    float: left;
+    margin-top: 0;
+    padding: 10px 15px;
+    width: 25px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 15px;
+    border: 0 none transparent;
+    background-color: #4AA047;
+    background-image: none;
+    cursor: pointer;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.mobile-btn-details {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 70px;
+    padding: 0 40px;
+    width: 210px;
+    background-color: #4AA047;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.header {
+    background-color: #fff;
+}
+
+/*================================================*/
+
+.food-menu-item {
+    background-color: #f8f9fa;
+}
+
+.food-menu-plan-tabs {
+    width: 415px;
+    padding-top: 20px;
+    margin: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 4;
+    position: relative;
+}
+
+.food-menu-plan-tabs a:hover {
+    color: #4AA047;
+}
+
+.plan-tabs {
+    border-radius: 4px 4px 0 0;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 3.5;
+    color: #4AA047;
+    background-color: #f8f9fa;
+    border: 1px solid #d3d6dc;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    margin: 0 0 -1px 0;
+}
+
+.header_placeholder {
+    display: none;
+    height: 64px;
+    width: 100%;
+}
+
+.after_fixed {
+    display: block;
+    position: relative;
+    visibility: hidden;
+}
+
+.active-tab {
+    margin-bottom: -2px;
+    background-color: #ffffff;
+    border: 1px solid #d3d6dc;
+    border-bottom: 2px solid #ffffff;
+}
+
+.header-placeholder {
+    display: none;
+    height: 64px;
+    width: 100%;
+}
+
+.week_meals_container {
+    overflow: visible !important;
+    padding: 30px 0 0 0 !important;
+    position: relative !important;
+}
+
+.week-header__wrapper {
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.05);
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 3;
+}
+
+.week-header {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #ffffff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    height: 64px;
+    width: 100%;
+}
+
+.week-header-content__wrapper {
+    webkit-flex: 1 1 25%;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
+}
+
+.week-header-content {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.week-header-content__container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.week-header-content__date {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #303235;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    display: block;
+}
+
+.sign-up-cta {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 0;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.sign-up-cta__btn-container {
+    padding-left: 14px;
+    margin-left: 14px;
+    margin-right: 0;
+}
+
+.get-cooking-btn-blue {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 3.5;
+    height: 46px;
+
+    border-radius: 2px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: content-box;
+    font-size: 14px;
+    /*line-height: 47.88px;*/
+    /*height: 47.88px;*/
+    padding: 0 35px;
+    display: inline-block;
+    text-decoration: none;
+    border: 0px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    /*font-weight: 500;*/
+    text-align: center;
+    color: #fff;
+    background-color: #4AA047;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    /*letter-spacing: 0.1em;*/
+}
+
+.get-cooking-btn-blue:hover{
+    color: #fff;
+}
+
+
+.meal-image {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.meal-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4AA047;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    line-height: 1.4;
+}
+
+.meal-sub-title {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 14px;
+    color: #696d75;
+}
+
+.details {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    color: #4AA047;
+    letter-spacing: 0.7px;
+    line-height: 14px;
+    z-index: 1;
+    font-size: 12px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.choose {
+    position: absolute;
+    bottom: 12px;
+    right: 80px;
+    color: #12419E;
+    letter-spacing: 0.7px;
+    line-height: 14px;
+    z-index: 1;
+    font-size: 12px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.meal-footer {
+    font-size: 12px;
+    line-height: normal;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding: 12px;
+    z-index: 1;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    box-shadow: inset 0 1px 0 #e4e6eb;
+    box-sizing: border-box;
+    height: 38px;
+    background-color: #ffffff;
+}
+
+.meal-time {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.meal-time p {
+    color: #303236;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.fixedMealWrapper {
+    position: fixed;
+    top: 64px;
+    width: 100%;
+    z-index: 100;
+}
+
+.get-cooking-menu-btn {
+    font-size: 16px;
+    line-height: 54.72px;
+    height: 54.72px;
+    padding: 0 40px;
+    margin-top: 35px;
+    background-color: #4AA047;
+    border-color: #4AA047;
+    border-radius: 2px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: content-box;
+    display: inline-block;
+    text-decoration: none;
+    border: 0px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.get-cooking-menu-btn:hover {
+    color: #fff;
+}
+
+.pg-link {
+    margin-bottom: 45px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.pg-link a {
+    color: #0d2a54;
+}
+
+.pg-link a:hover {
+    text-decoration: underline;
+}
+
+.test::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*================================================*/
+
+.nav-bar-sigin-btn {
+    border-radius: 2px !important;
+    -moz-user-select: -moz-none !important;
+    -ms-user-select: none !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    box-sizing: content-box !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    border: 0px !important;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 500 !important;
+    text-align: center !important;
+    color: #fff !important;
+    outline: none !important;
+    cursor: pointer !important;
+    position: relative !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    background-color: #4AA047 !important;
+    border-color: #4AA047 !important;
+    font-size: 14px !important;
+    line-height: 40px !important;
+    height: 40px !important;
+    padding: 0 20px !important;
+}
+
+
+/*=============================================
+          How it Work page style
+ =============================================*/
+
+.how_it_work_top_section {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 140px;
+}
+
+.how_it_work_top_section img {
+    width: 207px;
+}
+
+.how_it_work_top_section h1 {
+    margin-top: 36px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+}
+
+.how_it_work_top_section h2 {
+    font-size: 64px;
+    width: 68%;
+    margin: 0 auto;
+    color: #4AA047;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+
+}
+
+/*.how_it_work_column {
+    margin: 0 8% 157px 15%;
+    float: left;
+}
+
+.how_it_work_column img {
+    width: 85%;
+}
+
+.how_it_work_column_left {
+    float: left;
+    width: 48%;
+}
+
+.how_it_work_column_right {
+    float: left;
+    width: 37%;
+}
+
+.how_it_work_column_right h1{
+    font-size: 37px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.how_it_work_column_right p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: 'Cera Pro';
+    line-height: 24px;
+}
+
+.how_it_work_column_right a {
+    color: #245091;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 35px;
+    border: 1px solid #B1B5BD;
+    padding: 14px 35px 14px 35px;
+    font-family: 'Cera Pro';
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.how_it_work_column_content {
+    padding: 12% 7% 0 8%;
+}*/
+
+.how_it_work_step_section {
+    margin: 0 8% 157px 15% !important;
+}
+
+.how_it_work_step_section img{
+    width: 367.55px;
+    height: 367.55px;
+}
+
+.how_it_work_step_section h1 {
+    font-size: 37px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+}
+
+.how_it_work_step_section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: 'Cera Pro';
+    line-height: 24px;
+}
+
+.how_it_work_step_section a {
+    color: #245091;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 35px;
+    border: 1px solid #B1B5BD;
+    padding: 14px 35px 14px 35px;
+    font-family: 'Cera Pro';
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.how_it_work_step_section a:hover {
+    cursor: pointer;
+}
+
+.how_it_work_step_section a:hover {
+    cursor: pointer;
+}
+
+.how_it_work_try_section {
+    background: url("../../img/try_bg2.jpg");
+    background-size:cover;
+    margin: auto auto 70px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+}
+
+.how_it_work_try_section_content {
+    background: #fff;
+    text-align: center;
+    padding: 42px 0 42px 0;
+}
+
+.how_it_work_try_section img {
+    width: 180px;
+}
+
+.how_it_work_try_section h1 {
+    font-size: 34px;
+    color: #4AA047;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+
+.how_it_work_try_section h2 {
+    font-size: 17px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 17px;
+    color: #6A6D75;
+    font-weight: normal;
+}
+
+.how_it_work_try_section p {
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 37px;
+    color: #000;
+    font-weight: bold;
+}
+
+.how_it_work_try_section a {
+    color: #fff;
+    background-color: #4AA047;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 36px;
+    padding: 20px 53px 20px 53px;
+}
+
+.how_it_work_try_section_container {
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.how_it_work_contact_section {
+    margin-bottom: 60px;
+}
+
+.how_it_work_contact_title {
+    font-size: 34px;
+    margin-bottom: 17px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+}
+
+.how_it_work_contact_section ul li {
+    font-size: 16px;
+    color: #4AA047;
+    font-family: 'Cera Pro';
+    line-height: 40px;
+}
+
+.how_it_work_contact_section ul li a {
+    text-decoration: none;
+    color: #4AA047;
+    font-size: 16px;
+    font-family: 'Cera Pro';
+    line-height: 40px;
+}
+
+.all_fqas {
+    color: #4AA047;
+    border: 1px solid #B1B5BD;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 36px;
+    padding: 6px 27px 6px 27px;
+    float: left;
+    margin-top: 24px;
+    text-decoration: none;
+    font-family: 'Cera Pro';
+    letter-spacing: 1px;
+}
+
+.how_it_work_contact_question_side {
+    /*float: left;
+    width: calc(56% - 1px);*/
+    border-right: 1px solid #D9D9D9;
+}
+
+.how_it_work_contact_item {
+    margin-bottom: 17px;
+}
+
+.how_it_work_contact_item a{
+    font-size: 16px;
+    color: #4AA047;
+    text-decoration: none;
+}
+
+.how_it_work_modal_background {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.how_it_work_modal {
+    float: left;
+    background-color: #fff;
+    padding: 20px 20px 44px 20px;
+    width: 60%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    border: 0;
+    border-radius: 11px;
+    min-width: 950px;
+    max-width: 1024px;
+}
+
+.how_it_work_modal .my_close {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 38px;
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+}
+
+.how_it_work_step_section .how_it_work_modal_item img {
+    width: 95px !important;
+    height: 95px !important;
+}
+
+.how_it_work_modal_item h2 {
+    font-size: 22px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    color: #303236;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.how_it_work_modal_item p {
+    font-size: 16px;
+    margin: 0 10% 0 10%;
+    color: #6A6D75;
+    font-family: 'Cera Pro';
+}
+
+.how_it_work_btn_container {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.how_it_work_modal a.btn_blue {
+    color: #fff;
+    background-color: #4AA047;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 90px;
+    padding: 17px 35px 17px 35px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 220px;
+    text-decoration: none;
+    font-family: 'Cera Pro';
+    letter-spacing: 1px;
+}
+
+
+/*=============================================
+         end of How it Work page style
+ =============================================*/
+
+/*=============================================
+         start of pricing page style
+ =============================================*/
+
+.pricing_plan {
+    border-radius: 22px !important;
+    border: 1px solid rgba(0,0,0,0.06) !important;
+    background-color: #fff !important;
+    /*box-shadow: 0 1px 4px rgba(0,0,0,0.075) !important;*/
+    border: 1px solid #E4E6EB;;
+    padding: 0;
+}
+
+
+.pricing_plan_header {
+    padding: 16px 0;
+    border-radius: 22px !important;
+    border: 0;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    text-align: center;
+}
+
+.pricing_plan_title {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #303236;
+    font-weight: 600;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.pricing_plan_text {
+    color: #6a6d75;
+    font-size: 14px;
+    margin: 0;
+}
+
+.plan_image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 225px;
+    position: relative;
+}
+
+.pricing_plan_tow_person {
+    background-image: url("../../img/plan_2_person.jpg");
+}
+
+.pricing_plan_family {
+    background-image: url("../../img/plan_family.jpg");
+}
+
+.plan_quantity_selector {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.plan_quantity_selector_inputs {
+    position: relative;
+    border: solid rgba(117,129,167,0.25) 1px;
+    border-radius: 8px;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0 2px 10px 0 rgba(195,195,195,0.25);
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    padding: 0;
+}
+
+.plan_quantity_selector_legend {
+    position: absolute;
+    left: 9999px;
+    top: 99999px;
+}
+
+.plan_quantity_selector_radio {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.plan_quantity_selector_label {
+    position: relative;
+    box-sizing: border-box;
+    width: 45px;
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+input[type="radio"]:checked+label {
+    background-color: #4AA047;
+}
+
+input[type="radio"]:checked+label>span {
+    color: white;
+}
+
+.plan_quantity_selector_text {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #303236;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    margin: 0;
+}
+
+.plan_pricing {
+    padding-top: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.plan_pricing_price {
+    box-sizing: border-box;
+    width: 33%;
+    color: #303236;
+    font-size: 22px;
+    position: relative;
+    height: 50px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    margin-bottom: 0;
+}
+
+.plan_pricing_price:not(:last-child)::after {
+    content: '';
+    width: 1px;
+    background-color: #e4e6eb;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.plan_pricing_item {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.plan_pricing_description {
+    color: #6a6d75;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.plan_button {
+    padding: 20px 16px;
+    margin-top: 20px;
+}
+
+.plan_button_content {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 30px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    line-height: 47.88px;
+    height: 47.88px;
+    padding: 0 35px;
+    display: inline-block;
+    text-decoration: none;
+    border: 0px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background-color: #4AA047;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.pricing_question_section {
+    background-color: #fff;
+    border-top: 1px solid #e1e1e2;
+    padding-bottom: 40px;
+}
+
+.pricing_question_section_title {
+    margin: 35px 0 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+}
+
+.pricing_question_section_faq_txt {
+    width: 85%;
+}
+
+.pricing_question_section_faq_txt_question {
+    font-size: 18px !important;
+    color: #303236 !important;
+    line-height: 24px !important;
+    margin: 10px 0 !important;
+    font-weight: 500 !important;
+}
+
+.pricing_question_section_txt {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    color: #6a6d75 !important;
+    padding-bottom: 20px !important;
+}
+
+
+/*=============================================
+         end of pricing page style
+ =============================================*/
+
+
+/*=============================================
+         start of gifts page style
+ =============================================*/
+
+
+.gifts_card_banner {
+    height: 369px;
+    position: relative;
+}
+
+.gifts_card_banner::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gifts_card_banner .gifts_meal {
+    font-size: 46px;
+    background: url('../../img/banner_meal.jpg');
+    height: 369px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.gifts_meal_title {
+    width: 492px;
+    font-size: 70px;
+    line-height: 72px !important;
+    padding-top: 110px;
+    top: auto;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 900;
+    color: #4AA047;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.gift_container {
+    padding-top: 50px;
+    min-height: 600px;
+}
+
+.gift_card_image {
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    background-color: #4AA047;
+    border-radius: 20px;
+    height: 201px;
+    width: 308px;
+    color: white;
+    box-shadow: 0 16px 30px 0 rgba(0,0,0,0.2);
+}
+
+.gift_card_amount {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    position: absolute;
+    left: 20px;
+    top: 27px;
+}
+
+.gift_card_text {
+    position: absolute;
+    left: 20px;
+    top: 58px;
+    text-transform: uppercase;
+}
+
+.gift_card_brand_logo {
+    bottom: 10px;
+    position: absolute;
+    right: 19px;
+}
+
+.gift_info_list {
+    margin-left: 24px;
+    margin-top: 50px;
+    width: 86%;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #6a6d75;
+    list-style: inherit;
+}
+
+.gift_info_list li {
+    margin-bottom: 20px;
+}
+
+.gift_info_bold {
+    color: #303236;
+}
+
+.gift_input_label {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #303236;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+/*========*/
+
+.gifts_input_set {
+    position: relative;
+    border: solid rgba(117,129,167,0.25) 1px;
+    border-radius: 8px;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0 2px 10px 0 rgba(195,195,195,0.25);
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    padding: 0;
+}
+
+.gifts_radio {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.gifts_title {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #303236;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.gifts_label {
+    position: relative;
+    box-sizing: border-box;
+    /*width: 60px;*/
+    float: left;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 0 !important;
+    font-size: 10px;
+    border: 1px solid #b9b9c5;
+    text-transform: uppercase;
+}
+
+.gifts_label:hover {
+    background-color: #6a6d75;
+    border-color: #6a6d75;
+    color: #ffffff;
+}
+
+.gifts_input_set input[type="radio"]:checked+label{
+    background-color: #303236;
+    color: #ffffff;
+    border: solid 1px #303236;
+}
+
+
+.gifts_input_set input[type="radio"]:checked+label>span {
+    color: white;
+}
+
+.gifts_quantity_btn {
+    border-radius: 5px;
+    margin-right: -4px;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    width: 30px;
+    height: 38px;
+    box-sizing: border-box;
+    display: inline;
+    background-color: #b1b5bd;
+    padding: 0;
+    left: 0;
+    font-weight: 500;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    border: solid 1px #b1b5bd;
+    transition: all 0.5s ease-in-out;
+}
+
+.gifts_quantity_btn:hover {
+    background-color: #303236;
+    cursor: pointer;
+}
+
+.gifts_quantity_btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.gifts_quantity_number {
+    width: 49px;
+    height: 38px;
+    border-radius: 0;
+    border: 0;
+    border-top: solid 1px #b1b5bd;
+    border-bottom: solid 1px #b1b5bd;
+    text-align: center;
+    box-sizing: border-box;
+    top: -2px;
+    position: relative;
+}
+
+.gifts_email_label {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    color: #303236;
+    text-transform: uppercase;
+    line-height: 20px;
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: 0.1em;
+}
+
+.gifts_email_input {
+    border-radius: 5px;
+    line-height: 38px;
+    height: 38px;
+    border: 1px solid #d3d5db;
+    font-size: 12px;
+    color: #6a6d75;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.gifts_email_textarea {
+    border-radius: 5px;
+    line-height: 38px;
+    border: 1px solid #d3d5db;
+    font-size: 12px;
+    color: #6a6d75;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.gifts_email_button {
+    background-color: #4AA047;
+    border-color: #4AA047;
+    border-radius: 2px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    line-height: 47.88px;
+    height: 47.88px;
+    padding: 0 35px;
+    display: inline-block;
+    text-decoration: none;
+    border: 0px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/*=================================================*/
+
+
+/*=============================================
+         start of recipe opening page style
+ =============================================*/
+
+
+.recipe_top_section {
+    padding-top: 25px !important;
+    border-bottom: 1px solid #e4e6eb !important;
+}
+
+.recipe_image {
+    margin-bottom: 30px;
+}
+
+.recipe_title {
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+    font-size: 30px;
+}
+
+.recipe_sub_title {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6a6d75;
+    line-height: 1.2;
+}
+
+.recipe_title_icon {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: solid 1px #f7f6f4;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+    line-height: 1.8;
+    font-size: 27px;
+    color: #4AA047;
+    font-weight: normal !important;
+}
+
+/*.recipe_title_icon:hover {
+    background-color: #91c11e;
+}*/
+
+.recipe_main_list {
+    padding: 15px 0 15px;
+    margin: 25px 0 20px;
+    border-top: 1px solid #e4e6eb;
+    border-bottom: 1px solid #e4e6eb;
+    text-align: center;
+}
+
+.recipe_main_list_name {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+}
+
+.recipe_main_list_name_link:hover {
+    cursor: pointer;
+}
+
+.recipe_main_list_value {
+    color: #6a6d75;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.recipe_main_description {
+    color: #303236;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.recipe_main_description_btn {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 54.72px;
+    height: 54.72px;
+    padding: 0 40px;
+    background-color: #f26226;
+    border-color: #f26226;
+    border-radius: 2px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: content-box;
+    display: inline-block;
+    text-decoration: none;
+    border: 0px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+}
+
+.recipe_main_description_btn:hover {
+    color: #fff;
+}
+
+.recipe_ingredients_section {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.recipe_ingredients_title_area {
+    /*margin-bottom: 25px;*/
+    padding-right: 15px;
+    padding-left: 45px;
+}
+
+.recipe_amount_title_container {
+    line-height: 1.5;
+    font-size: 16px;
+    margin-right: 15px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: 'Source Sans Pro','Trebuchet MS',Helvetica,sans-serif;
+}
+
+.recipe_amount_number {
+    padding: 8px 16px;
+    padding-left: 30px;
+    padding-top: 15px;
+    display: inline-block;
+    border-color: #eceae6 !important;
+}
+
+.recipe_amount_btn {
+    padding-right: 17px;
+    padding-left: 17px;
+    border-color: #e8e8e8;
+    background-color: #fff;
+    line-height: 1.5;
+    height: 40px;
+    border-radius: 3px;
+    text-transform: none;
+    letter-spacing: normal;
+    border-style: solid;
+    border-width: 1px;
+    vertical-align: text-bottom;
+    display: inline-block;
+    margin-right: -4px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro','Trebuchet MS',Helvetica,sans-serif;
+    font-size: 16px;
+}
+
+.recipe_amount_btn:focus {
+    outline: nonepricing_plan;
+}
+
+.recipe_amount_btn_active {
+    background-color: #4AA047;
+    border-color: #4AA047;
+    color: #fff;
+}
+
+.border_top_right_zero {
+    border-top-right-radius: 0 !important;
+}
+
+.border-bottom_right_zero {
+    border-bottom-right-radius: 0 !important;
+}
+
+.border_top_left_zero {
+    border-top-left-radius: 0 !important;
+}
+
+.border_bottom_left_zero {
+    border-bottom-left-radius: 0 !important;
+}
+
+.recipe_ingredients_title {
+    /*
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    */
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 24px;
+    color: #343434;
+    letter-spacing: -.3px;
+    text-transform: capitalize;
+}
+
+.recipe_ingredients_content {
+    min-height: 375px;
+    position: relative;
+}
+
+.recipe_ingredients_content_image_hldr {
+    max-width: 700px;
+}
+
+.recipe_ingredients_list_item {
+    line-height: 2.5;
+    font-weight: 650;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 16px;
+}
+
+.recipe_ingredients_list_item_div {
+    padding: 4px;
+    color: #6a6d75;
+}
+
+.recipe_ingredients_list_item_div span {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 400;
+    color: #6a6d75;
+    width: 23%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.nutrition_name {
+    font-weight: 600;
+    color: #343434;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: 'Source Sans Pro','Trebuchet MS',Helvetica,sans-serif;
+}
+
+.nutrition_value {
+    color: #343434;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: 'Source Sans Pro','Trebuchet MS',Helvetica,sans-serif;
+}
+
+.recipe_tools_section {
+    background-color: #fff;
+    border: solid 1px #f7f6f4;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.recipe_tools_title {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.recipe_tool_name_container {
+    padding: 15px;
+    display: inline-block;
+}
+
+.recipe_tool_name_container span.dot {
+    font-weight: 600;
+}
+
+.recipe_tool_name_container span.name {
+    color: #343434;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    /*font-family: 'Source Sans Pro','Trebuchet MS',Helvetica,sans-serif;*/
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.recipe_instruction_section {
+    padding-top: 20px;
+    background-color: #fff;
+    border: solid 1px #f7f6f4;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.instruction_title {
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #303236;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.instruction_download {
+    font-size: 15px;
+    line-height: 2.3;
+    color: #4AA047;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.instruction_download .download_btn:hover {
+    cursor: pointer;
+}
+
+.instructions_img_container {
+    /*padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;*/
+}
+
+.instructions_img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.instruction_description_container {
+    padding: 0 15px;
+}
+
+.instruction_description {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-top: solid 1px #ebebeb;
+}
+
+.instruction_number {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #4AA047;  /*#0f346c*/
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.instruction_step_title {
+    color: black;
+    line-height: 24px;
+    font-size: 20px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 700;
+}
+
+.instruction_word {
+    color: #343434;
+    line-height: 24px;
+    font-size: 18px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+/*----*/
+
+.recipe_top_pic_container {
+    margin-right: -15px;
+    margin-left: -15px;
+    background-color: #eceae6;
+    position: relative;
+    padding-bottom: 500px;
+    overflow: hidden;
+}
+
+.recipe_top_pic {
+    position: absolute;
+    top: 68px;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.recipe_page_main_container {
+    position: relative;
+    justify-content: center;
+    -webkit-box-pack: center;
+    padding-bottom: 20px;
+}
+
+.recipe_top_section_tow {
+    position: relative;
+    margin-top: -60px;
+    padding: 20px 30px;
+    background-color: #fff !important;
+    border: solid 1px #f7f6f4;
+    line-height: 1.7em;
+    font-size: 16px;
+}
+
+.recipe_top_text_container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: 'Source Sans Pro','Trebuchet MS',Helvetica,sans-serif;
+}
+
+.recipe_top_text_container p {
+    color: #343434;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+
+}
+
+span.recipe_top_text_title {
+    color: #343434;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+span.recipe_value {
+    color: #343434;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+/*----------------------------------*/
+
+.recipe_ingredients_section_tow {
+    background-color: #fff;
+    border: solid 1px #f7f6f4;
+    padding: 20px 30px;
+}
+
+.recipe_natural_section_tow {
+    background-color: #fff;
+    border: solid 1px #f7f6f4;
+    height: fit-content;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.recipe_an_ingredient_container {
+    margin-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.recipe_an_ingredient_img_container_1 {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    border: solid 1px #f7f6f4;
+    float: left;
+}
+
+.recipe_an_ingredient_img_container_2 {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
+
+.recipe_an_ingredient_img_container_3 {
+    top: 50%;
+    bottom: 0;
+    transform: translateY(-50%);
+    display: block;
+    height: auto;
+    max-width: 100%;
+    left: 0;
+    position: absolute;
+    /*opacity: 0;*/
+    transition: opacity 0.3s linear;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    width: 100%;
+    background: #f5f5f5;
+    padding-bottom: 100%;
+}
+
+.recipe_an_ingredient_img {
+    top: 50%;
+    bottom: 0;
+    transform: translateY(-50%);
+    display: block;
+    height: auto;
+    max-width: 100%;
+    left: 0;
+    position: absolute;
+    /*opacity: 1;*/
+    transition: opacity 0.3s linear;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    right: 0;
+    margin: 0 auto;
+}
+
+.recipe_an_ingredient_text_container {
+    margin-left: 85px;
+    margin-top: 12px;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.recipe_an_ingredient_text_container p {
+    line-height: 1.7;
+    font-size: 14px;
+    margin: 0;
+    color: #343434;
+    font-weight: 400;
+    font-family: 'Source Sans Pro','Trebuchet MS',Helvetica,sans-serif;
+}
+
+span.nutrition_title {
+    line-height: 32px;
+    font-size: 24px;
+    letter-spacing: -.3px;
+    color: #343434;
+    font-weight: 400;
+    font-family: 'Source Sans Pro','Trebuchet MS',Helvetica,sans-serif;
+}
+
+span.nutrition_value_title {
+    color: #7e7e7e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: 'Source Sans Pro','Trebuchet MS',Helvetica,sans-serif;
+}
+
+.plan_description_text {
+    text-align: center;
+    font-size: 17px;
+    color: #6A6E75;
+    margin: 25px 10px 0;
+    min-height: 72px;
+}
+
+.testimonial_section {
+    background-color: #ebecf1;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.testimonial_content_holder {
+    padding: 15px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.075);
+    background-color: #ffffff !important;
+    max-width: 830px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+
+/*=================================================*/
+
+@media only screen and (max-width: 1199px){
+
+    .recipe_top_pic_container {
+        padding-bottom: 50vh;
+    }
+
+}
+
+@media (min-width: 962px) {
+
+    .recipe_image{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    footer-nav {
+        margin-left: 3%;
+    }
+}
+
+/*tablet*/
+
+
+@media (max-width: 1023px) and (min-width: 320px){
+
+    .how_it_work_try_section_container {
+        width: 100% !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+}
+
+/* phone */
+
+@media (max-width: 767px) {
+
+    .get-cooking-btn-blue {
+        height: 40px;
+        padding: 0 20px;
+        letter-spacing: 0;
+        font-size: 11px;
+        line-height: 3.8;
+    }
+
+    .week-header-content__date {
+        font-size: 11px;
+    }
+    .food-menu-plan-tabs {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .plan-tabs {
+        width: 130px;
+        font-size: 10px;
+        line-height: 4.5;
+    }
+
+    .footer-email-input {
+        margin-bottom: 10px;
+    }
+
+    .footer-submit-btn {
+        width: 245px;
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    .recipe_an_ingredient_container {
+        text-align: center;
+        align-items: center;
+    }
+
+    .recipe_amount_number {
+        text-align: center;
+    }
+
+    .recipe_amount_number {
+        display: block;
+    }
+
+    .logo {
+        width: 65px;
+        top: 0;
+    }
+
+    .recipe_ingredients_section_tow {
+        margin-bottom: 25px;
+    }
+
+    .recipe_ingredients_title {
+        margin: 0 auto;
+    }
+
+    .recipe_top_pic_container {
+        padding-bottom: 25vh;
+    }
+
+    .recipe_step_container {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .recipe_main_description {
+        text-align: center !important;
+    }
+
+    .recipe_title_icon_container {
+        text-align: center !important;
+    }
+
+    .recipe_title_container {
+        text-align: center !important;
+        margin-bottom: 15px;
+    }
+
+    .recipe_top_section {
+        padding-top: 0 !important;
+    }
+
+    .recipe_section {
+        padding-top: 0 !important;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+        padding: 9px 0px;
+        margin-left: 8px;
+        font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+        color: #4AA047 !important;
+        font-weight: 400;
+        display: block;
+    }
+
+    .gift_card_image {
+        display: none;
+    }
+
+    .gifts_meal_title {
+        width: 212px;
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .how_it_work_modal a.btn_blue {
+        width: 160px;
+        padding: 10px 10px 10px 10px !important;
+    }
+
+    .how_it_work_btn_container {
+        margin-top: 10px;
+    }
+
+    .how_it_work_modal .my_close {
+        padding-bottom: 0 !important;
+    }
+
+    .how_it_work_step_section .how_it_work_modal_item h2 {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 5px;
+        margin: 0 auto !important;
+    }
+
+    .how_it_work_step_section .how_it_work_modal_item img {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
+    .how_it_work_modal {
+        padding: 10px 20px 20px 20px;
+        width: 77%;
+        min-width: auto;
+        max-width: none;
+    }
+
+    .how_it_work_top_section h2 {
+        font-size: 36px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .how_it_work_contact_question_side {
+        border-right: 0;
+        border-bottom: 1px solid #D9D9D9;
+        padding-bottom: 17px;
+    }
+
+    .how_it_work_step_section h1 {
+        text-align: center;
+        font-size: 29px;
+        margin-bottom: 8px;
+    }
+
+    .how_it_work_step_section p {
+        font-size: 15px;
+        width: 87%;
+        text-align: center;
+    }
+
+    .how_it_work_step_section img{
+        width: 207px;
+        height: 207px;
+    }
+
+    /*.how_it_work_step_section a {
+        padding: 10px 35px 10px 35px;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 24px;
+    }*/
+
+    .how_it_work_try_section_container {
+        width: 100% !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .phone-btn{
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        display:block;
+    }
+
+    .blue-btn {
+        color: #245091 !important;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .custom-title-size {
+        font-size: 26px !important;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .lg-no-boarder{
+        border: none !important;
+    }
+
+    .lg-no-boarder:hover{
+        background-color: #fff !important;
+    }
+
+}

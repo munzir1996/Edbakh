@@ -1,0 +1,36 @@
+<?php
+
+
+return [
+
+    'top_title' => 'How it works',
+    'second_title' => 'We\'ll send you delicious recipes & ingredients every week.',
+    'step1_title' => 'You choose your recipes',
+    'step1_text' => 'We have a broad menu, with easy 20-minute meals and more challenging recipes.',
+    'step2_title' => 'We send you everything you need',
+    'step2_text' => 'Each box contains exactly the pre-portioned ingredients you need for the recipes you chose, and easy-to-use instructions.',
+    'step3_title' => 'Freshness Guaranteed',
+    'step3_text' => 'Our boxes are cooled and insulated, so you don’t have to be home to receive them.',
+    'step4_title' => 'Different plans to fit your household and lifestyle',
+    'step4_text' => 'Choose from recipes that serve 2 or family, and choose how many recipes to get each week.',
+    'step5_title' => 'No Commitment',
+    'step5_text' => 'You can skip or cancel anytime. No jumping through hoops—we promise.',
+    'modal1_title' => 'Weekly Reminders',
+    'modal1_text' => 'We’ll always remind you before anything ships. No surprises here.',
+    'modal2_title' => 'Keep-cool Packaging',
+    'modal2_text' => 'Our boxes are cooled and insulated, so you don’t have to be home to receive them, with freshness guaranteed.',
+    'modal3_title1' => 'Flexible Plans',
+    'modal3_text1' => 'Choose from recipes that serve 2 or 4, and choose how many recipes to get each week.',
+    'modal3_title2' => 'Dietary Options',
+    'modal3_text2' => 'Avoiding any or all meats? All weekly menus include vegetarian and pescatarian friendly recipes.',
+    'bottom_try' => 'Give it a try!',
+    'bottom_no' => 'No commitment. You can skip or cancel anytime.',
+    'bottom_start' => 'Starting at SR7.49 per serving',
+    'question_title' => 'Common Questions',
+    'question1' => 'Where do you deliver?',
+    'question2' => 'How does the Freshness Guarantee work?',
+    'question3' => 'When am I charged for my subscription?',
+    'question4' => 'How do I skip a delivery?',
+    'faqs' => 'View All FAQs',
+    'contact_us' => 'Contact Us',
+];
