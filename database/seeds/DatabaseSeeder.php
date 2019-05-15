@@ -10,10 +10,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        DB::table('users')->insert([
+        DB::table('admins')->insert([
            'name' => 'Alnejome Mubark',
            'email' => 'admin@admin.com',
-           'role' => 1,
            'password' => Hash::make('123'),
         ]);
 
@@ -28,6 +27,7 @@ class DatabaseSeeder extends Seeder
         $this->call(TagsSeeder::class);
         $this->call(PutsSeeder::class);
         $this->call(FaqsSeeder::class);
+        $this->call(CitiesSeeder::class);
 
     }
 }

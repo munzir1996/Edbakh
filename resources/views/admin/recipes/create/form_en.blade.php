@@ -19,16 +19,22 @@
         <span class="text-danger">{{$errors->first('description_en')}}</span>
     </div>
 
-    <div class="form-group col-6">
+    <div class="form-group col-4">
         <label>Calories</label>
         <input type="number" name="calories" value="{{old('calories')}}" class="form-control">
         <span class="text-danger">{{$errors->first('calories')}}</span>
     </div>
 
-    <div class="form-group col-6">
+    <div class="form-group col-4">
         <label>Duration (Time)</label>
         <input type="number" name="time" value="{{old('time')}}" class="form-control">
         <span class="text-danger">{{$errors->first('time')}}</span>
+    </div>
+
+    <div class="form-group col-4">
+        <label>Level</label>
+        <input type="number" name="level" value="{{old('level')}}" class="form-control">
+        <span class="text-danger">{{$errors->first('level')}}</span>
     </div>
 
     <div class="form-group col-4">

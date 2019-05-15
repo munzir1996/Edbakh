@@ -20,6 +20,16 @@
         <input type="email" name="email" value="{{$setting->email}}" class="form-control">
     </div>
 
+    <div class="form-group col-6">
+        <label>Pricing Title</label>
+        <input type="text" name="price_title_en" value="{{$setting->price_title_en}}" class="form-control">
+    </div>
+
+    <div class="form-group col-6">
+        <label>Pricing Subtitle</label>
+        <input type="text" name="price_subtitle_en" value="{{$setting->price_subtitle_en}}" class="form-control">
+    </div>
+
     <div class="form-group col-12">
         <label>Description</label>
         <textarea name="description_en" class="form-control">{{$setting->description_en}}</textarea>
@@ -32,7 +42,7 @@
 
     <div class="form-group col-12">
         <label>Privacy Policy</label>
-        <textarea name="privacy_policy_en" class="form-control ck_editor" >{{$setting->privacy_policy_en}}</textarea>
+        <textarea name="privacy_policy_en" class="form-control ck_editor">{{$setting->privacy_policy_en}}</textarea>
     </div>
 
     <div class="form-group col-12">

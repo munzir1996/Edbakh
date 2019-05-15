@@ -10,6 +10,15 @@
         <input type="text" name="address_ar" dir="rtl" value="{{$setting->address_ar}}" class="form-control">
     </div>
 
+    <div class="form-group col-6">
+        <label>Price Titel</label>
+        <input type="text" name="price_title_ar" dir="rtl" value="{{$setting->price_title_ar}}" class="form-control">
+    </div>
+
+    <div class="form-group col-6">
+        <label>Price Subtitle</label>
+        <input type="text" name="price_subtitle_ar" dir="rtl" value="{{$setting->price_subtitle_ar}}" class="form-control">
+    </div>
 
     <div class="form-group col-12">
         <label>Description</label>
@@ -23,7 +32,7 @@
 
     <div class="form-group col-12">
         <label>Privacy Policy</label>
-        <textarea name="privacy_policy_ar" class="form-control ck_editor" >{{$setting->privacy_policy_ar}}</textarea>
+        <textarea name="privacy_policy_ar" class="form-control ck_editor">{{$setting->privacy_policy_ar}}</textarea>
     </div>
 
     <div class="form-group col-12">

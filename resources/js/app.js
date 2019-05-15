@@ -16,6 +16,8 @@ Vue.component('tabs', require('./components/tabs'));
 Vue.component('tab', require('./components/tab'));
 
 Vue.component('how_it_work_modal', require('./components/how_it_work_modal'));
+//ME
+Vue.component('question', require('./components/question'));
 
 Vue.component('tow_person_plan', require('./components/tow_person_plan'));
 

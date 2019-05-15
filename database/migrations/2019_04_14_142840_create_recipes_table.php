@@ -23,6 +23,7 @@ class CreateRecipesTable extends Migration
             $table->text('description_en');
             $table->unsignedInteger('calories');
             $table->unsignedInteger('time');
+            $table->unsignedInteger('level');
             $table->unsignedInteger('component_id');
             $table->unsignedInteger('dish_id');
             $table->unsignedInteger('season_id');

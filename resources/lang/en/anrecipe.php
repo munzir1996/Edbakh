@@ -8,6 +8,8 @@ return  [
     'description' => 'We all have a soft spot for the sticky-sweet chicken that’s a staple of takeout dinners. But it’s not exactly a meal for any night of the week—until now. We’re swapping out the heavy glaze for a fresh burst of ginger and a swirl of honey and soy sauce. Served with tender green beans on a bed of jasmine rice, it’ll give you a good reason to toss out the phone number for your delivery joint.',
     'time' => 'Preparation Time',
     'time_value' => 'minutes',
+    'cooking_difficulty' => 'Cooking difficulty',
+    'level' => 'Level',
     'tags' => 'Tags',
     'egg_free' => 'Egg free',
     'nut_free' => 'Nut free',

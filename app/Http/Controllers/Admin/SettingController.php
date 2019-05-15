@@ -55,6 +55,10 @@ class SettingController extends Controller
         $setting->title_ar = $request->title_ar;
         $setting->address_en = $request->address_en;
         $setting->address_ar = $request->address_ar;
+        $setting->price_title_en = $request->price_title_en;
+        $setting->price_title_ar = $request->price_title_ar;
+        $setting->price_subtitle_en = $request->price_subtitle_en;
+        $setting->price_subtitle_ar = $request->price_subtitle_ar;
         $setting->description_en = $request->description_en;
         $setting->description_ar = $request->description_ar;
         $setting->keywords_en = $request->keywords_en;

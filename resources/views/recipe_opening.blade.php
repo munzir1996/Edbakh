@@ -32,7 +32,8 @@
 
                     <div class="col-md-4 text-right" style="">
 
-                        <recipe_reaction language="{{App::getLocale()}}" recipe_id="{{$recipe->id}}"></recipe_reaction>
+                        <recipe_reaction language="{{App::getLocale()}}" recipe_id="{{$recipe->id}}">
+                        </recipe_reaction>
 
                     </div>
 
@@ -77,6 +78,14 @@
                             <span class="recipe_top_text_title">{{__('anrecipe.time')}}</span>
 
                             <span class="recipe_value">{{$recipe->time}} {{__('anrecipe.time_value')}}</span>
+
+                        </div>
+
+                        <div class="col-12 row justify-content-between">
+
+                            <span class="recipe_top_text_title">{{__('anrecipe.cooking_difficulty')}}</span>
+
+                            <span class="recipe_value">{{__('anrecipe.level')}} {{$recipe->level}}</span>
 
                         </div>
 

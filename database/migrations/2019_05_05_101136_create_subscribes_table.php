@@ -15,10 +15,10 @@ class CreateSubscribesTable extends Migration
     {
         Schema::create('subscribes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('shipping_cost');
-            $table->unsignedInteger('meal_cost');
-            $table->unsignedInteger('total_cost');
-            $table->unsignedInteger('no_meals');
+            $table->float('shipping_cost');
+            $table->float('meal_cost');
+            $table->float('total_cost');
+            $table->float('no_meals');
             $table->unsignedInteger('ordered')->default(Subscribe::ZERO);
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('plan_id');

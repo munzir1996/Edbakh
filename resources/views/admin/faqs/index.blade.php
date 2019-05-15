@@ -18,7 +18,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="{{url('/admin/home')}}">Home</a></li>
-                    <li class="breadcrumb-item"><a href="{{route('faq.index')}}">FAQ</a></li>
+                    <li class="breadcrumb-item"><a href="{{route('questions.index')}}">FAQ</a></li>
                     <li class="breadcrumb-item active">FAQ List</li>
                 </ol>
             </div>
@@ -61,9 +61,9 @@
                                             <td>{{$faq->title_ar}}</td>
                                             <td>{{$faq->title_en}}</td>
                                             <td>
-                                                <form action="{{route('faq.destroy', $faq->id)}}" method="POST">
+                                                <form action="{{route('questions.destroy', $faq->id)}}" method="POST">
                                                     @csrf {{ method_field('DELETE') }}
-                                                    <a href="{{route('faq.edit', $faq->id)}}" class="btn dark btn-sm btn-outline sbold uppercase">
+                                                    <a href="{{route('questions.edit', $faq->id)}}" class="btn dark btn-sm btn-outline sbold uppercase">
                                                         <i class="fa fa-edit"> تعديل </i>
                                                     </a>
                     

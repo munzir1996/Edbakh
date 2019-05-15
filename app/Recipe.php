@@ -13,7 +13,7 @@ class Recipe extends Model
      */
     protected $fillable = [
         'title_ar', 'subtitle_ar', 'title_en', 'subtitle_en', 'description_ar', 'description_en', 'calories',
-        'time', 'component_id', 'dish_id', 'season_id', 'plan_id', 'date_id',
+        'time', 'level', 'component_id', 'dish_id', 'season_id', 'plan_id', 'date_id',
     ];
 
     public function component() {

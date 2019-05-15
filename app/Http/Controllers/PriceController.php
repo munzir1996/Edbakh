@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Plan;
 use App\User;
+use App\setting;
 use App\Subscribe;
 use Auth;
 use Illuminate\Http\Request;
@@ -18,11 +19,12 @@ class PriceController extends Controller
      */
     public function index()
     {
+        $plans = Plan::all();
         $current = 'pricing';
 
-        $plans = Plan::all();
+        // dd($setting);
 
-        return view('pricing.main', compact(['current', 'plans']));
+        return view('pricing.main', compact(['current', 'plans',]));
     }
 
     /**
@@ -52,25 +54,36 @@ class PriceController extends Controller
             'shipping_cost' => 'required',
         ]);
 
-        $subscribe = new Subscribe;
+        $status = Subscribe::where('plan_id', $request->plan_id)->first();
 
-        $subscribe->user_id  = Auth::user()->id;
-        $subscribe->plan_id  = $request->plan_id;
-        $subscribe->ordered  = Subscribe::ZERO;
-        $subscribe->no_meals  = $request->no_meals;
-        $subscribe->total_cost  = $request->total_cost;
-        $subscribe->meal_cost  = $request->meal_cost;
-        $subscribe->shipping_cost  = $request->shipping_cost;
-        
-        // Shows  message
-        if($subscribe->save()){
-            Session::flash('success', 'Subscribed Sucsessful');
-            return($request);
-        }else {
+        if ($status === null) {
+            $subscribe = new Subscribe;
 
-            Session::flash('error', 'Subscribe Failed');
+            $subscribe->user_id  = Auth::user()->id;
+            $subscribe->plan_id  = $request->plan_id;
+            $subscribe->ordered  = Subscribe::ZERO;
+            $subscribe->no_meals  = $request->no_meals;
+            $subscribe->total_cost  = $request->total_cost;
+            $subscribe->meal_cost  = $request->meal_cost;
+            $subscribe->shipping_cost  = $request->shipping_cost;
+            
+            // Shows  message
+            if($subscribe->save()){
+                Session::flash('success', 'Subscribed Sucsessful');
+                return($request);
+            }else {
+
+                Session::flash('error', 'Subscribe Failed');
+                return($request);
+            }
+        } else {
+                Session::flash('error', 'You are Subscribed');
         }
-        return($request);
+        
+
+        // dd($status);
+
+        
 
     }
 

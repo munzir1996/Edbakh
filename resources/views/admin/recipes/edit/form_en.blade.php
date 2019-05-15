@@ -31,6 +31,12 @@
         <span class="text-danger">{{$errors->first('time')}}</span>
     </div>
 
+    <div class="form-group col-6">
+        <label>Level</label>
+        <input type="number" name="level" value="{{$recipe->level}}" class="form-control">
+        <span class="text-danger">{{$errors->first('level')}}</span>
+    </div>
+
     <div class="form-group col-4">
         <label>Main Component</label>
         <select name="component_id" class="form-control">

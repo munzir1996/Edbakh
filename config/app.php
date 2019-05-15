@@ -171,8 +171,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Unisharp\Ckeditor\ServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
-        //ZanySoft\LaravelPDF\PdfServiceProvider::class,
-        //Barryvdh\DomPDF\ServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,
 
     ],
 
@@ -223,7 +222,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Image' => Intervention\Image\Facades\Image::class,
-        //'PDF' => ZanySoft\LaravelPDF\Facades\PDF::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
 
     ],
 

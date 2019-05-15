@@ -62,12 +62,12 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="{{url('/admin/plans/trash')}}" class="nav-link @if(isset($sub_active) && $sub_active == 'trash') active  @endif">
                                 <i class="fa fa-trash nav-icon" aria-hidden="true"></i>
                                 <p>Trash</p>
                             </a>
-                        </li>
+                        </li> --}}
 
                     </ul>
                 </li>
@@ -397,6 +397,33 @@
 
                     </ul>
                 </li>
+
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link @if($active == 'city') active  @endif">
+                        <i class="nav-icon fa fa-table"></i>
+                        <p>
+                            City
+                            <i class="fa fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+
+                        <li class="nav-item">
+                            <a href="{{route('cities.index')}}" class="nav-link @if(isset($sub_active) && $sub_active == 'city_list') active  @endif">
+                                <i class="fa fa-list nav-icon" aria-hidden="true"></i>
+                                <p>Cities List</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('cities.create')}}" class="nav-link @if(isset($sub_active) && $sub_active == 'create_city') active  @endif">
+                                <i class="fa fa-plus nav-icon" aria-hidden="true"></i>
+                                <p>Create City</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
                
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link @if($active == 'faq') active  @endif">
@@ -409,14 +436,14 @@
                     <ul class="nav nav-treeview">
 
                         <li class="nav-item">
-                            <a href="{{route('faq.index')}}" class="nav-link @if(isset($sub_active) && $sub_active == 'faq_list') active  @endif">
+                            <a href="{{route('questions.index')}}" class="nav-link @if(isset($sub_active) && $sub_active == 'faq_list') active  @endif">
                                 <i class="fa fa-list nav-icon" aria-hidden="true"></i>
                                 <p>FAQ List</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{route('faq.create')}}" class="nav-link @if(isset($sub_active) && $sub_active == 'create_faq') active  @endif">
+                            <a href="{{route('questions.create')}}" class="nav-link @if(isset($sub_active) && $sub_active == 'create_faq') active  @endif">
                                 <i class="fa fa-plus nav-icon" aria-hidden="true"></i>
                                 <p>Create FAQ</p>
                             </a>

@@ -13,7 +13,7 @@
                 <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="{{url('/admin/home')}}">Home</a></li>
-                    <li class="breadcrumb-item"><a href="{{route('faq.index')}}">FAQ</a></li>
+                    <li class="breadcrumb-item"><a href="{{route('questions.index')}}">FAQ</a></li>
                     <li class="breadcrumb-item active">Create</li>
                 </ol>
                 </div>
@@ -31,7 +31,7 @@
 
                     <div class="card">
 
-                        <form method="POST" action="{{route('faq.store')}}" enctype="multipart/form-data">
+                        <form method="POST" action="{{route('questions.store')}}" enctype="multipart/form-data">
 
                             {{csrf_field()}}
 

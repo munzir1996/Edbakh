@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use DB;
 use App\Plan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -222,7 +223,9 @@ class PlanController extends Controller
         }
         
         if ($plan->save()) {
-            
+            //Delete weeks table
+            DB::table('weeks')->where('plan_id', $id)->delete();
+
             foreach ($per_week as $index => $weeks) {
                 
                 $week = new Week;
@@ -239,9 +242,21 @@ class PlanController extends Controller
     }
     
 
-    public function destroy(Plan $plan)
+    public function destroy($id)
     {
-        //
+        $plan = Plan::findOrFail($id);
+        
+        // Shows .toaster message
+        if($plan->delete()){
+
+            session()->flash('message', 'The plan has been deleted successfully');
+            //Redirect to another page
+		    return redirect()->route('plans.index');
+        }
+
+        session()->flash('message', 'Error the plan was not deleted');
+        //Redirect to another page
+	    return redirect()->route('plans.index');
     }
 
     // public function client_pricing_page(){

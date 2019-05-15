@@ -2,321 +2,329 @@
 
 @section('content')
 
-    @include('layouts.header')
+@include('layouts.header')
 
-    <main style="margin-top: 68px !important;">
+<main style="margin-top: 68px !important;">
 
-        <div class="container">
+    <div class="container">
 
-            <section class="how_it_work_top_section">
+        <section class="how_it_work_top_section">
 
-                <img src="{{asset('files/img/how_it_work_top_section.png')}}" alt="top">
+            <img src="{{asset('files/img/how_it_work_top_section.png')}}" alt="top">
 
-                <h1>{{__('how.top_title')}}</h1>
+            <h1>{{__('how.top_title')}}</h1>
 
-                <h2>{{__('how.second_title')}}</h2>
+            <h2>{{__('how.second_title')}}</h2>
 
-            </section>
+        </section>
 
-            {{--step1--}}
-            <section class="row how_it_work_step_section">
+        {{--step1--}}
+        <section class="row how_it_work_step_section">
 
-                <div class="col-lg-6 col-md-12 text-center">
+            <div class="col-lg-6 col-md-12 text-center">
 
-                    <img src="{{asset('files/img/how_it_work_step1.png')}}" alt="">
+                <img src="{{asset('files/img/how_it_work_step1.png')}}" alt="">
 
-                </div>
+            </div>
 
-                <div class="col-lg-6 col-md-12" style="{{App::isLocale('en')? 'padding: 12% 1% 0 8% !important;' : 'padding: 12% 2% 0px 2% !important;'}}">
+            <div class="col-lg-6 col-md-12"
+                style="{{App::isLocale('en')? 'padding: 12% 1% 0 8% !important;' : 'padding: 12% 2% 0px 2% !important;'}}">
 
-                    <h1>{{__('how.step1_title')}}</h1>
+                <h1>{{__('how.step1_title')}}</h1>
 
-                    <p>{{__('how.step1_text')}}</p>
+                <p>{{__('how.step1_text')}}</p>
 
-                    <how_it_work_modal btn="{{__('global.learn_more')}}">
+                <how_it_work_modal btn="{{__('global.learn_more')}}">
 
-                        <div class="container row">
+                    <div class="container row">
 
-                            <div class="col-md-5 col-sm-12 text-center m-auto how_it_work_modal_item">
+                        <div class="col-md-5 col-sm-12 text-center m-auto how_it_work_modal_item">
 
-                                <div>
+                            <div>
 
-                                    <img src="{{asset('files/img/modal_message.png')}}">
-
-                                </div>
-
-                                <h2>{{__('how.modal1_title')}}</h2>
-
-                                <p>{{__('how.modal1_text')}}</p>
+                                <img src="{{asset('files/img/modal_message.png')}}">
 
                             </div>
 
-                        </div>
+                            <h2>{{__('how.modal1_title')}}</h2>
 
-                        <div class="how_it_work_btn_container">
-
-                            <a href="#" class="btn_blue">{{__('global.start')}}</a>
+                            <p>{{__('how.modal1_text')}}</p>
 
                         </div>
 
-                    </how_it_work_modal>
+                    </div>
 
-                </div>
+                    <div class="how_it_work_btn_container">
 
-            </section>
-            {{--end of step1--}}
+                        <a href="#" class="btn_blue">{{__('global.start')}}</a>
 
-            {{--step2--}}
-            <section class="row how_it_work_step_section">
+                    </div>
 
-                <div class="col-lg-6 col-md-12 text-center">
+                </how_it_work_modal>
 
-                    <img src="{{asset('files/img/how_it_work_step2.png')}}" alt="">
+            </div>
 
-                </div>
+        </section>
+        {{--end of step1--}}
 
-                <div class="col-lg-6 col-md-12" style="{{App::isLocale('en')? 'padding: 12% 1% 0 8% !important;' : 'padding: 12% 2% 0px 2% !important;'}}">
+        {{--step2--}}
+        <section class="row how_it_work_step_section">
 
-                    <h1>{{__('how.step2_title')}}</h1>
+            <div class="col-lg-6 col-md-12 text-center">
 
-                    <p>{{__('how.step2_text')}}</p>
+                <img src="{{asset('files/img/how_it_work_step2.png')}}" alt="">
 
-                    {{--<a href="#">Learn More</a>--}}
+            </div>
 
-                </div>
+            <div class="col-lg-6 col-md-12"
+                style="{{App::isLocale('en')? 'padding: 12% 1% 0 8% !important;' : 'padding: 12% 2% 0px 2% !important;'}}">
 
-            </section>
-            {{--end of step2--}}
+                <h1>{{__('how.step2_title')}}</h1>
 
-            {{--step3--}}
-            <section class="row how_it_work_step_section">
+                <p>{{__('how.step2_text')}}</p>
 
-                <div class="col-lg-6 col-md-12 text-center">
+                {{--<a href="#">Learn More</a>--}}
 
-                    <img src="{{asset('files/img/how_it_work_step3.png')}}" alt="">
+            </div>
 
-                </div>
+        </section>
+        {{--end of step2--}}
 
-                <div class="col-lg-6 col-md-12" style="{{App::isLocale('en')? 'padding: 12% 1% 0 8% !important;' : 'padding: 12% 2% 0px 2% !important;'}}">
+        {{--step3--}}
+        <section class="row how_it_work_step_section">
 
-                    <h1>{{__('how.step3_title')}}</h1>
+            <div class="col-lg-6 col-md-12 text-center">
 
-                    <p>{{__('how.step3_text')}}</p>
+                <img src="{{asset('files/img/how_it_work_step3.png')}}" alt="">
 
-                    <how_it_work_modal btn="{{__('global.learn_more')}}">
+            </div>
 
-                        <div class="container row">
+            <div class="col-lg-6 col-md-12"
+                style="{{App::isLocale('en')? 'padding: 12% 1% 0 8% !important;' : 'padding: 12% 2% 0px 2% !important;'}}">
 
-                            <div class="col-md-5 col-sm-12 text-center m-auto how_it_work_modal_item">
+                <h1>{{__('how.step3_title')}}</h1>
 
-                                <div>
+                <p>{{__('how.step3_text')}}</p>
 
-                                    <img src="{{asset('files/img/modal_keep_cool.png')}}">
+                <how_it_work_modal btn="{{__('global.learn_more')}}">
 
-                                </div>
+                    <div class="container row">
 
-                                <h2>{{__('how.modal2_title')}}</h2>
+                        <div class="col-md-5 col-sm-12 text-center m-auto how_it_work_modal_item">
 
-                                <p>{{__('how.modal2_text')}}</p>
+                            <div>
+
+                                <img src="{{asset('files/img/modal_keep_cool.png')}}">
 
                             </div>
 
-                        </div>
+                            <h2>{{__('how.modal2_title')}}</h2>
 
-                        <div class="how_it_work_btn_container">
-
-                            <a href="#" class="btn_blue">{{__('global.start')}}</a>
+                            <p>{{__('how.modal2_text')}}</p>
 
                         </div>
 
-                    </how_it_work_modal>
+                    </div>
 
-                </div>
+                    <div class="how_it_work_btn_container">
 
-            </section>
-            {{--end of step3--}}
+                        <a href="#" class="btn_blue">{{__('global.start')}}</a>
 
-            {{--step4--}}
-            <section class="row how_it_work_step_section">
+                    </div>
 
-                <div class="col-lg-6 col-md-12 text-center">
+                </how_it_work_modal>
 
-                    <img src="{{asset('files/img/how_it_work_step4.png')}}" alt="">
+            </div>
 
-                </div>
+        </section>
+        {{--end of step3--}}
 
-                <div class="col-lg-6 col-md-12" style="{{App::isLocale('en')? 'padding: 12% 1% 0 8% !important;' : 'padding: 12% 2% 0px 2% !important;'}}">
+        {{--step4--}}
+        <section class="row how_it_work_step_section">
 
-                    <h1>{{__('how.step4_title')}}</h1>
+            <div class="col-lg-6 col-md-12 text-center">
 
-                    <p>{{__('how.step4_text')}}</p>
+                <img src="{{asset('files/img/how_it_work_step4.png')}}" alt="">
 
-                    <how_it_work_modal btn="{{__('global.learn_more')}}">
+            </div>
 
-                        <div class="container row text-center">
+            <div class="col-lg-6 col-md-12"
+                style="{{App::isLocale('en')? 'padding: 12% 1% 0 8% !important;' : 'padding: 12% 2% 0px 2% !important;'}}">
 
-                            <div class="col-md col-sm-12 text-center m-auto how_it_work_modal_item">
+                <h1>{{__('how.step4_title')}}</h1>
 
-                                <div class="text-center">
+                <p>{{__('how.step4_text')}}</p>
 
-                                    <img src="{{asset('files/img/modal_flex_plan.png')}}">
+                <how_it_work_modal btn="{{__('global.learn_more')}}">
 
-                                </div>
+                    <div class="container row text-center">
 
-                                <h2>{{__('how.modal3_title1')}}</h2>
+                        <div class="col-md col-sm-12 text-center m-auto how_it_work_modal_item">
 
-                                <p>{{__('how.modal3_text1')}}</p>
+                            <div class="text-center">
 
-                            </div>
-
-
-                            <div class="col-md col-sm-12 text-center m-auto how_it_work_modal_item">
-
-                                <div>
-
-                                    <img src="{{asset('files/img/modal_options.png')}}">
-
-                                </div>
-
-                                <h2>{{__('how.modal3_title2')}}</h2>
-
-                                <p>{{__('how.modal3_text2')}}</p>
+                                <img src="{{asset('files/img/modal_flex_plan.png')}}">
 
                             </div>
 
-                            {{--<div class="col-md col-sm-12 text-center m-auto how_it_work_modal_item">
+                            <h2>{{__('how.modal3_title1')}}</h2>
+
+                            <p>{{__('how.modal3_text1')}}</p>
+
+                        </div>
+
+
+                        <div class="col-md col-sm-12 text-center m-auto how_it_work_modal_item">
+
+                            <div>
+
+                                <img src="{{asset('files/img/modal_options.png')}}">
+
+                            </div>
+
+                            <h2>{{__('how.modal3_title2')}}</h2>
+
+                            <p>{{__('how.modal3_text2')}}</p>
+
+                        </div>
+
+                        {{--<div class="col-md col-sm-12 text-center m-auto how_it_work_modal_item">
 
                                 <div>
 
                                     <img src="{{asset('files/img/modal_variaty.png')}}">
 
-                                </div>
+                    </div>
 
-                                <h2>Recipe Variety</h2>
+                    <h2>Recipe Variety</h2>
 
-                                <p>We have a broad menu, with easy 20-minute meals and more challenging recipes.</p>
+                    <p>We have a broad menu, with easy 20-minute meals and more challenging recipes.</p>
 
-                            </div>--}}
+            </div>--}}
 
 
-                        </div>
+    </div>
 
-                        <div class="how_it_work_btn_container">
+    <div class="how_it_work_btn_container">
 
-                            <a href="#" class="btn_blue">{{__('global.start')}}</a>
+        <a href="#" class="btn_blue">{{__('global.start')}}</a>
 
-                        </div>
+    </div>
 
-                    </how_it_work_modal>
+    </how_it_work_modal>
 
-                </div>
+    </div>
 
-            </section>
-            {{--end of step4--}}
+    </section>
+    {{--end of step4--}}
 
-            {{--step5--}}
-            <section class="row how_it_work_step_section">
+    {{--step5--}}
+    <section class="row how_it_work_step_section">
 
-                <div class="col-lg-6 col-md-12 text-center">
+        <div class="col-lg-6 col-md-12 text-center">
 
-                    <img src="{{asset('files/img/how_it_work_step5.png')}}" alt="">
-
-                </div>
-
-                <div class="col-lg-6 col-md-12" style="{{App::isLocale('en')? 'padding: 12% 1% 0 8% !important;' : 'padding: 12% 2% 0px 2% !important;'}}">
-
-                    <h1>{{__('how.step5_title')}}</h1>
-
-                    <p>{{__('how.step5_text')}}</p>
-
-                    {{--<a href="#">Learn More</a>--}}
-
-                </div>
-
-            </section>
-            {{--end of step5--}}
+            <img src="{{asset('files/img/how_it_work_step5.png')}}" alt="">
 
         </div>
 
-        <div class="how_it_work_try_section_container">
-<!-- Get Start -->
-            <section class="how_it_work_try_section">
+        <div class="col-lg-6 col-md-12"
+            style="{{App::isLocale('en')? 'padding: 12% 1% 0 8% !important;' : 'padding: 12% 2% 0px 2% !important;'}}">
 
-                <div class="container row m-auto text-center">
+            <h1>{{__('how.step5_title')}}</h1>
 
-                    <div class="col-lg-4 col-md-8 how_it_work_try_section_content m-auto">
+            <p>{{__('how.step5_text')}}</p>
 
-                        <img src="{{asset('files/img/try_header_img.png')}}" alt="">
+            {{--<a href="#">Learn More</a>--}}
 
-                        <h1>{{__('how.bottom_try')}}</h1>
-
-                        <h2>{{__('how.bottom_no')}}</h2>
-
-                        <p>{{__('how.bottom_start')}}</p>
-
-                        <a href="#">{{__('global.start')}}</a>
-
-                    </div>
-
-                </div>
-
-            </section>
-<!-- Get Start -->
         </div>
 
-        <section class="how_it_work_contact_section">
+    </section>
+    {{--end of step5--}}
 
-            <div class="container row m-auto" style="padding-right: 50px; padding-left: 50px;">
+    </div>
 
-                <div class="col-md-6 col-sm-12 how_it_work_contact_question_side">
+    <div class="how_it_work_try_section_container">
+        <!-- Get Start -->
+        <section class="how_it_work_try_section">
 
-                    <h1 class="how_it_work_contact_title">{{__('how.question_title')}}</h1>
-<!-- Questions -->
-                    <ul>
+            <div class="container row m-auto text-center">
 
-                        <li><a href="#"></a>{{__('how.question1')}}</li>
+                <div class="col-lg-4 col-md-8 how_it_work_try_section_content m-auto">
 
-                        <li><a href="#"></a>{{__('how.question2')}}</li>
+                    <img src="{{asset('files/img/try_header_img.png')}}" alt="">
 
-                        <li><a href="#"></a>{{__('how.question3')}}</li>
+                    <h1>{{__('how.bottom_try')}}</h1>
 
-                        <li><a href="#"></a>{{__('how.question4')}}</li>
+                    <h2>{{__('how.bottom_no')}}</h2>
 
-                    </ul>
-<!-- Questions -->
-<!-- FAQ -->
-                    <a href="{{url('/'.App::getLocale().'/faq')}}" class="all_fqas">{{__('how.faqs')}}</a>
-<!-- FAQ -->
-                </div>
+                    <p>{{__('how.bottom_start')}}</p>
 
-                <div class="col-md-5 col-sm-12 ml-auto">
-
-                    <h1 class="how_it_work_contact_title">{{__('how.contact_us')}}</h1>
-
-                    <div class="how_it_work_contact_item">
-
-                        <i class="fas fa-phone fa-flip-horizontal" style="color: #4AA047 !important; font-size: 20px !important;"></i>&nbsp;&nbsp;
-
-                        <a href="tel:9662345693">(966) 234693</a>
-
-                    </div>
-
-                    <div class="how_it_work_contact_item">
-
-                        <i class="fas fa-envelope" style="color: #4AA047 !important; font-size: 20px !important;"></i>&nbsp;&nbsp;
-
-                        <a href="mailto:info@edbakh.com">info@edbakh.com</a>
-
-                    </div>
+                    <a href="#">{{__('global.start')}}</a>
 
                 </div>
 
             </div>
 
         </section>
+        <!-- Get Start -->
+    </div>
 
-    </main>
+    <section class="how_it_work_contact_section">
 
-    @include('layouts.footer')
+        <div class="container row m-auto" style="padding-right: 50px; padding-left: 50px;">
+
+            <div class="col-md-6 col-sm-12 how_it_work_contact_question_side">
+
+                <h1 class="how_it_work_contact_title">{{__('how.question_title')}}</h1>
+                <!-- Questions -->
+
+                <ul>
+                    @foreach ($faqs as $faq)
+                        <question question="{{$faq['title_'.App::getLocale()]}}" 
+                        answer="{{strip_tags($faq['content_'.App::getLocale()])}}">
+                        </question>
+                    @endforeach
+                    
+                    {{-- <li><a href="#"></a>{{__('how.question4')}}</li> --}}
+
+                </ul>
+
+                <!-- Questions -->
+                <!-- FAQ -->
+                <a href="{{url('/'.App::getLocale().'/faq')}}" class="all_fqas">{{__('how.faqs')}}</a>
+                <!-- FAQ -->
+            </div>
+
+            <div class="col-md-5 col-sm-12 ml-auto">
+
+                <h1 class="how_it_work_contact_title">{{__('how.contact_us')}}</h1>
+
+                <div class="how_it_work_contact_item">
+
+                    <i class="fas fa-phone fa-flip-horizontal"
+                        style="color: #4AA047 !important; font-size: 20px !important;"></i>&nbsp;&nbsp;
+
+                    <a href="tel:9662345693">(966) 234693</a>
+
+                </div>
+
+                <div class="how_it_work_contact_item">
+
+                    <i class="fas fa-envelope"
+                        style="color: #4AA047 !important; font-size: 20px !important;"></i>&nbsp;&nbsp;
+
+                    <a href="mailto:info@edbakh.com">info@edbakh.com</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+@include('layouts.footer')
 
 @endsection

@@ -62,14 +62,12 @@
                         //window.Alert.success('Subscribe Added!');
                         console.log("response");
                         console.log(response.data);
-                        alert("Done");
                         window.location.pathname = '/ar/pricing'
                     })
                     .catch(error => {
                         //window.Alert.error('Oops! Something went wrong!');
                         console.log("error");
                         console.log(error.data);
-                        alert(error);
                         window.location.pathname = '/ar/pricing'
                     });
                     
@@ -85,7 +83,6 @@
                         //window.Alert.success('Subscribe Added!');
                         console.log("response");
                         console.log(response.data);
-                        alert("Done");
                         window.location.pathname = '/en/pricing'
                         
                     })

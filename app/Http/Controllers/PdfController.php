@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use PDF;
-use App\Recipe;
-use Lang;
 
 class PdfController extends Controller
 {
@@ -14,19 +12,19 @@ class PdfController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function generatePDF($id)
+    public function generatePDF()
     {
-        $recipe = Recipe::findOrFail($id);
-        if (\Lang::getLocale() == 'en') {
-            $data = ['title_en' => $recipe->title_en,
-                    ];
-            $pdf = PDF::loadView('pdf', $data);
-    
-            return $pdf->download('Edbakh.pdf');
-        } else {
-            # code...
+
+        if (version_compare(PHP_VERSION, '7.2.0', '>=')) {
+            // Ignores notices and reports all other kinds... and warnings
+            error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
+            // error_reporting(E_ALL ^ E_WARNING); // Maybe this is enough
         }
         
+        $data = ['title' => 'Welcome to HDTuto.com'];
+        $pdf = PDF::loadView('pdf', $data);
+  
+        return $pdf->download('pdf');
         
     }
 }

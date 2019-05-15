@@ -1,0 +1,42 @@
+{
+  "name": "zanysoft/laravel-pdf",
+  "description": "Laravel PDF - for generating pdf invice or documents.",
+  "license": "MIT",
+  "homepage": "http://www.zanysoft.co",
+  "keywords": [
+        "laravel",
+        "laravel-pdf",
+        "pdf",
+        "pdf-invoice",
+        "pdf-documents",
+        "adobe"
+   ],
+  "authors": [
+    {
+      "name": "Zany Soft",
+      "email": "info@zanysoft.co",
+      "homepage": "http://www.zanysoft.co"
+    }
+  ],
+  "extra": {
+        "laravel": {
+            "providers": [
+                "ZanySoft\\LaravelPDF\\PdfServiceProvider"
+            ],
+            "aliases": {
+                "PDF" : "ZanySoft\\LaravelPDF\\Facades\\PDF"
+            }
+        }
+    },
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0",
+    "mpdf/mpdf": "^6.1.3",
+    "zanysoft/laravel-zip": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ZanySoft\\LaravelPDF\\": "src/"
+    }
+  }
+}

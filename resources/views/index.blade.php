@@ -16,7 +16,7 @@
                             {{__('main.index_show_case_title')}}
                         </h1>
 <!-- أبدأ -->
-                        <a href="#" class="btn-orange radius get-cooking-btn hide" style="color: #fff !important;">{{__('main.global_start')}}</a>
+                        <a href="{{url('/'.App::getLocale().'/pricing')}}" class="btn-orange radius get-cooking-btn hide" style="color: #fff !important;">{{__('main.global_start')}}</a>
 <!-- أبدأ -->
                     </div>
                 </div>
@@ -96,10 +96,11 @@
                             <li><i class="fas fa-plus in-box-list-icon"></i>{{__('main.index_inside_box_text1')}}</li>
                             <li><i class="fas fa-plus in-box-list-icon"></i>{{__('main.index_inside_box_text2')}}</li>
                             <li><i class="fas fa-plus in-box-list-icon"></i>{{__('main.index_inside_box_text3')}}</li>
+                            <li><i class="fas fa-plus in-box-list-icon"></i>{{__('main.index_inside_box_text4')}}</li>
                         </ul>
 <!-- اختر خطتك 1 -->
                         <div class="text-center">
-                            <a href="#" class="in-box-btn">{{__('main.global_choose_plan')}}</a>
+                            <a href="{{url('/'.App::getLocale().'/pricing')}}" class="in-box-btn">{{__('main.global_choose_plan')}}</a>
                         </div>
 <!-- اختر خطتك 1 -->
                     </div>
@@ -127,7 +128,7 @@
 
                 </div>
 <!-- أختر خطتك 2 -->
-                <a href="#" class="start-price-btn">{{__('main.global_choose_plan')}}</a>
+                <a href="{{url('/'.App::getLocale().'/pricing')}}" class="start-price-btn">{{__('main.global_choose_plan')}}</a>
 <!-- أختر خطتك 2 -->
             </div>
         </section>

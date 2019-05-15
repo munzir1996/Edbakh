@@ -13,7 +13,7 @@
                     <a href="" class="logo_container sign_up_logo"><img src="{{asset('files/img/logo_'.App::getLocale().'.png')}}" width="100%"></a>
 <!-- الخطوات -->
                     <ul class="steps">
-
+                        <button class="btn btn-link" style="color: #4aa047" :disabled="this.step != 1">
                         <li @click="setStep(1)" :class="{active: this.step === 1}">
 
                             <span class="step_number">1</span>
@@ -21,7 +21,8 @@
                             <span class="step_text">{{__('sign.welcome')}}</span>
 
                         </li>
-
+                        </button>
+                    <button class="btn btn-link" style="color: #4aa047" :disabled="this.step != 2">
                         <li @click="setStep(2)" :class="{active: this.step === 2}">
 
                             <span class="step_number">2</span>
@@ -29,6 +30,8 @@
                             <span class="step_text">{{__('sign.plans')}}</span>
 
                         </li>
+                    </button>
+                    <button class="btn btn-link" style="color: #4aa047" :disabled="this.step != 3">
 
                         <li @click="setStep(3)" :class="{active: this.step === 3}">
 
@@ -37,7 +40,8 @@
                             <span class="step_text">{{__('sign.checkout')}}</span>
 
                         </li>
-
+                    </button>
+                    <button class="btn btn-link" style="color: #4aa047" :disabled="this.step != 4">
                         <li @click="setStep(4)" :class="{active: this.step === 4}">
 
                             <span class="step_number">4</span>
@@ -45,7 +49,7 @@
                             <span class="step_text">{{__('sign.choose_meals')}}</span>
 
                         </li>
-
+                    </button>
                     </ul>
 <!-- الخطوات -->
                 </div>
@@ -85,12 +89,12 @@
                                 </div>
                             </div>
 
-                            <div class="row">
+                            {{-- <div class="row">
                                 <div class="col-sm-12 form-group">
                                     <label for="zip" class="sign_up_label">Zip</label>
                                     <input id="zip" type="text" class="sign_up_input">
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="row">
                                 <div class="col-sm-12 form-group">
@@ -213,25 +217,6 @@
 
                                         <div class="form-group col-lg-6">
                                             <label  class="checkout_label">{{__('sign.city')}}</label>
-                                            <input  type="text" class="checkout_input">
-                                        </div>
-
-                                        {{--<div class="form-group col-lg-2">
-                                            <label  class="checkout_label">{{__('sign.')}}</label>
-                                            <input  type="text" class="checkout_input">
-                                        </div>--}}
-
-                                        <div class="form-group col-lg-4">
-                                            <label  class="checkout_label">Zip*</label>
-                                            <input  type="text" class="checkout_input">
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row">
-
-                                        <div class="form-group col-lg-6">
-                                            <label  class="checkout_label">{{__('sign.phone_number')}}</label>
                                             <input  type="text" class="checkout_input">
                                         </div>
 

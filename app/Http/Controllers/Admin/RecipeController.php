@@ -75,6 +75,7 @@ class RecipeController extends Controller
             'description_ar' => 'required',
             'description_en' => 'required',
             'time' => 'required',
+            'level' => 'required',
             'calories' => 'required|integer',
             'picture' => 'required|image',
             'component_id' => 'required|integer',
@@ -93,6 +94,7 @@ class RecipeController extends Controller
         $recipe->description_ar  = $request->description_ar;
         $recipe->description_en  = $request->description_en;
         $recipe->time  = $request->time;
+        $recipe->level  = $request->level;
         $recipe->calories  = $request->calories;
         $recipe->component_id  = $request->component_id;
         $recipe->dish_id  = $request->dish_id;
@@ -195,6 +197,7 @@ class RecipeController extends Controller
             'description_ar' => 'required',
             'description_en' => 'required',
             'time' => 'required',
+            'level' => 'required',
             'calories' => 'required|integer',
             'picture' => 'sometimes',
             'component_id' => 'required|integer',
@@ -211,6 +214,7 @@ class RecipeController extends Controller
         $recipe->description_ar  = $request->description_ar;
         $recipe->description_en  = $request->description_en;
         $recipe->time  = $request->time;
+        $recipe->level  = $request->level;
         $recipe->calories  = $request->calories;
         $recipe->component_id  = $request->component_id;
         $recipe->dish_id  = $request->dish_id;

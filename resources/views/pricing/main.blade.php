@@ -13,8 +13,11 @@
         <p class="alert alert-success">{{session()->get('message')}}</p>
 
     @endif
-        <div class="container row m-auto">
-
+    <br>
+        <h1 align="center">{{$setting['price_title_'.App::getLocale()]}}</h1> 
+        <p align="center">{{$setting['price_subtitle_'.App::getLocale()]}}</p>
+    
+    <div class="container row m-auto">
             @foreach($plans as $plan)
 
             <recipe_plan inline-template serving="{{$plan->price_per_serve}}" week="{{$plan->weeks[0]->week}}"

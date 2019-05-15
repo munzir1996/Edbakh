@@ -9,7 +9,7 @@ return [
     'choose_meals' => 'CHOOSE MEALS',
     'start' => 'Get Started',
     'start_text' => 'Farm-fresh ingredients and delicious recipes delivered weekly to your home',
-    'email' => 'Email or Phone Number',
+    'email' => 'Phone Number',
     'email_only' => 'Email',
     'password' => 'Create a password',
     'continue' => 'Continue',
