@@ -50285,7 +50285,7 @@ exports = module.exports = __webpack_require__(4)(false);
 
 
 // module
-exports.push([module.i, ".fade-enter-active, .fade-leave-active {\n    transition: opacity .15s linear;\n}\n.fade-enter, .fade-leave-to {\n    opacity: 0;\n}\n", ""]);
+exports.push([module.i, ".fade-enter-active, .fade-leave-active {\r\n    transition: opacity .15s linear;\r\n}\r\n.fade-enter, .fade-leave-to {\r\n    opacity: 0;\r\n}\r\n", ""]);
 
 // exports
 
@@ -52514,7 +52514,7 @@ exports = module.exports = __webpack_require__(4)(false);
 
 
 // module
-exports.push([module.i, "/* workaround for https://github.com/bootstrap-vue/bootstrap-vue/issues/1560 */\n/* source: _input-group.scss */\n\n.input-group > .input-group-prepend > .b-dropdown > .btn,\n.input-group > .input-group-append:not(:last-child) > .b-dropdown > .btn,\n.input-group > .input-group-append:last-child > .b-dropdown:not(:last-child):not(.dropdown-toggle) > .btn {\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0;\n}\n\n.input-group > .input-group-append > .b-dropdown > .btn,\n.input-group > .input-group-prepend:not(:first-child) > .b-dropdown > .btn,\n.input-group > .input-group-prepend:first-child > .b-dropdown:not(:first-child) > .btn {\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0;\n}\n", ""]);
+exports.push([module.i, "/* workaround for https://github.com/bootstrap-vue/bootstrap-vue/issues/1560 */\r\n/* source: _input-group.scss */\r\n\r\n.input-group > .input-group-prepend > .b-dropdown > .btn,\r\n.input-group > .input-group-append:not(:last-child) > .b-dropdown > .btn,\r\n.input-group > .input-group-append:last-child > .b-dropdown:not(:last-child):not(.dropdown-toggle) > .btn {\r\n    border-top-right-radius: 0;\r\n    border-bottom-right-radius: 0;\r\n}\r\n\r\n.input-group > .input-group-append > .b-dropdown > .btn,\r\n.input-group > .input-group-prepend:not(:first-child) > .b-dropdown > .btn,\r\n.input-group > .input-group-prepend:first-child > .b-dropdown:not(:first-child) > .btn {\r\n    border-top-left-radius: 0;\r\n    border-bottom-left-radius: 0;\r\n}\r\n", ""]);
 
 // exports
 
@@ -53625,7 +53625,7 @@ exports = module.exports = __webpack_require__(4)(false);
 
 
 // module
-exports.push([module.i, "/* Special styling for type=range and type=color input */\ninput.form-control[type=\"range\"],\ninput.form-control[type=\"color\"] {\n    height: 2.25rem;\n}\ninput.form-control.form-control-sm[type=\"range\"],\ninput.form-control.form-control-sm[type=\"color\"] {\n    height: 1.9375rem;\n}\ninput.form-control.form-control-lg[type=\"range\"],\ninput.form-control.form-control-lg[type=\"color\"] {\n    height: 3rem;\n}\n\n/* Less padding on type=color */\ninput.form-control[type=\"color\"] {\n    padding: 0.25rem 0.25rem;\n}\ninput.form-control.form-control-sm[type=\"color\"] {\n    padding: 0.125rem 0.125rem;\n}\n", ""]);
+exports.push([module.i, "/* Special styling for type=range and type=color input */\r\ninput.form-control[type=\"range\"],\r\ninput.form-control[type=\"color\"] {\r\n    height: 2.25rem;\r\n}\r\ninput.form-control.form-control-sm[type=\"range\"],\r\ninput.form-control.form-control-sm[type=\"color\"] {\r\n    height: 1.9375rem;\r\n}\r\ninput.form-control.form-control-lg[type=\"range\"],\r\ninput.form-control.form-control-lg[type=\"color\"] {\r\n    height: 3rem;\r\n}\r\n\r\n/* Less padding on type=color */\r\ninput.form-control[type=\"color\"] {\r\n    padding: 0.25rem 0.25rem;\r\n}\r\ninput.form-control.form-control-sm[type=\"color\"] {\r\n    padding: 0.125rem 0.125rem;\r\n}\r\n", ""]);
 
 // exports
 
@@ -59113,7 +59113,7 @@ exports = module.exports = __webpack_require__(4)(false);
 
 
 // module
-exports.push([module.i, "/* Add support for fixed layout table */\ntable.b-table.b-table-fixed {\n    table-layout: fixed;\n}\n\n/* Busy table styling */\ntable.b-table[aria-busy='false'] {\n    opacity: 1;\n}\ntable.b-table[aria-busy='true'] {\n    opacity: 0.6;\n}\n\n/* Sort styling */\ntable.b-table > thead > tr > th,\ntable.b-table > tfoot > tr > th {\n    position: relative;\n}\ntable.b-table > thead > tr > th.sorting,\ntable.b-table > tfoot > tr > th.sorting {\n    padding-right: 1.5em;\n    cursor: pointer;\n}\ntable.b-table > thead > tr > th.sorting::before,\ntable.b-table > thead > tr > th.sorting::after,\ntable.b-table > tfoot > tr > th.sorting::before,\ntable.b-table > tfoot > tr > th.sorting::after {\n    position: absolute;\n    bottom: 0;\n    display: block;\n    opacity: 0.4;\n    padding-bottom: inherit;\n    font-size: inherit;\n    line-height: 180%;\n}\ntable.b-table > thead > tr > th.sorting::before,\ntable.b-table > tfoot > tr > th.sorting::before {\n    right: 0.75em;\n    content: '\\2191';\n}\ntable.b-table > thead > tr > th.sorting::after,\ntable.b-table > tfoot > tr > th.sorting::after {\n    right: 0.25em;\n    content: '\\2193';\n}\ntable.b-table > thead > tr > th.sorting_asc::after,\ntable.b-table > thead > tr > th.sorting_desc::before,\ntable.b-table > tfoot > tr > th.sorting_asc::after,\ntable.b-table > tfoot > tr > th.sorting_desc::before {\n    opacity: 1;\n}\n\n/* Stacked table layout */\n/* Derived from http://blog.adrianroselli.com/2017/11/a-responsive-accessible-table.html */\n/* Always stacked */\ntable.b-table.b-table-stacked {\n    width: 100%;\n}\ntable.b-table.b-table-stacked,\ntable.b-table.b-table-stacked > tbody,\ntable.b-table.b-table-stacked > tbody > tr,\ntable.b-table.b-table-stacked > tbody > tr > td,\ntable.b-table.b-table-stacked > tbody > tr > th,\ntable.b-table.b-table-stacked > caption {\n    display: block;\n}\n\n/* Hide stuff we can't deal with, or shouldn't show */\ntable.b-table.b-table-stacked > thead,\ntable.b-table.b-table-stacked > tfoot,\ntable.b-table.b-table-stacked > tbody > tr.b-table-top-row,\ntable.b-table.b-table-stacked > tbody > tr.b-table-bottom-row {\n    display: none;\n}\n\n/* inter-row top border */\ntable.b-table.b-table-stacked > tbody > tr > :first-child {\n    border-top-width: 0.4rem;\n}\n\n/* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\ntable.b-table.b-table-stacked > tbody > tr > [data-label] {\n    display: grid;\n    grid-template-columns: 40% auto;\n    grid-gap: 0.25rem 1rem;\n}\n\n/* generate row cell \"heading\" */\ntable.b-table.b-table-stacked > tbody > tr > [data-label]::before {\n    content: attr(data-label);\n    display: inline;\n    text-align: right;\n    overflow-wrap: break-word;\n    font-weight: bold;\n    font-style: normal;\n}\n\n@media all and (max-width: 575.99px) {\n    /* Under SM */\n    table.b-table.b-table-stacked-sm {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-sm,\n    table.b-table.b-table-stacked-sm > tbody,\n    table.b-table.b-table-stacked-sm > tbody > tr,\n    table.b-table.b-table-stacked-sm > tbody > tr > td,\n    table.b-table.b-table-stacked-sm > tbody > tr > th,\n    table.b-table.b-table-stacked-sm > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-sm > thead,\n    table.b-table.b-table-stacked-sm > tfoot,\n    table.b-table.b-table-stacked-sm > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-sm > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-sm > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-sm > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-sm > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 767.99px) {\n    /* under MD  */\n    table.b-table.b-table-stacked-md {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-md,\n    table.b-table.b-table-stacked-md > tbody,\n    table.b-table.b-table-stacked-md > tbody > tr,\n    table.b-table.b-table-stacked-md > tbody > tr > td,\n    table.b-table.b-table-stacked-md > tbody > tr > th,\n    table.b-table.b-table-stacked-md > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-md > thead,\n    table.b-table.b-table-stacked-md > tfoot,\n    table.b-table.b-table-stacked-md > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-md > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-md > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-md > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-md > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 991.99px) {\n    /* under LG  */\n    table.b-table.b-table-stacked-lg {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-lg,\n    table.b-table.b-table-stacked-lg > tbody,\n    table.b-table.b-table-stacked-lg > tbody > tr,\n    table.b-table.b-table-stacked-lg > tbody > tr > td,\n    table.b-table.b-table-stacked-lg > tbody > tr > th,\n    table.b-table.b-table-stacked-lg > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-lg > thead,\n    table.b-table.b-table-stacked-lg > tfoot,\n    table.b-table.b-table-stacked-lg > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-lg > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-lg > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-lg > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-lg > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n@media all and (max-width: 1199.99px) {\n    /* under XL  */\n    table.b-table.b-table-stacked-xl {\n        width: 100%;\n    }\n    table.b-table.b-table-stacked-xl,\n    table.b-table.b-table-stacked-xl > tbody,\n    table.b-table.b-table-stacked-xl > tbody > tr,\n    table.b-table.b-table-stacked-xl > tbody > tr > td,\n    table.b-table.b-table-stacked-xl > tbody > tr > th,\n    table.b-table.b-table-stacked-xl > caption {\n        display: block;\n    }\n    /* hide stuff we can't deal with, or shouldn't show */\n    table.b-table.b-table-stacked-xl > thead,\n    table.b-table.b-table-stacked-xl > tfoot,\n    table.b-table.b-table-stacked-xl > tbody > tr.b-table-top-row,\n    table.b-table.b-table-stacked-xl > tbody > tr.b-table-bottom-row {\n        display: none;\n    }\n    /* inter-row top border */\n    table.b-table.b-table-stacked-xl > tbody > tr > :first-child {\n        border-top-width: 0.4rem;\n    }\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\n    table.b-table.b-table-stacked-xl > tbody > tr > [data-label] {\n        display: grid;\n        grid-template-columns: 40% auto;\n        grid-gap: 0.25rem 1rem;\n    }\n    /* generate row cell \"heading\" */\n    table.b-table.b-table-stacked-xl > tbody > tr > [data-label]::before {\n        content: attr(data-label);\n        display: inline;\n        text-align: right;\n        overflow-wrap: break-word;\n        font-weight: bold;\n        font-style: normal;\n    }\n}\n\n/* Details row styling */\ntable.b-table > tbody > tr.b-table-details > td {\n    border-top: none;\n}\n", ""]);
+exports.push([module.i, "/* Add support for fixed layout table */\r\ntable.b-table.b-table-fixed {\r\n    table-layout: fixed;\r\n}\r\n\r\n/* Busy table styling */\r\ntable.b-table[aria-busy='false'] {\r\n    opacity: 1;\r\n}\r\ntable.b-table[aria-busy='true'] {\r\n    opacity: 0.6;\r\n}\r\n\r\n/* Sort styling */\r\ntable.b-table > thead > tr > th,\r\ntable.b-table > tfoot > tr > th {\r\n    position: relative;\r\n}\r\ntable.b-table > thead > tr > th.sorting,\r\ntable.b-table > tfoot > tr > th.sorting {\r\n    padding-right: 1.5em;\r\n    cursor: pointer;\r\n}\r\ntable.b-table > thead > tr > th.sorting::before,\r\ntable.b-table > thead > tr > th.sorting::after,\r\ntable.b-table > tfoot > tr > th.sorting::before,\r\ntable.b-table > tfoot > tr > th.sorting::after {\r\n    position: absolute;\r\n    bottom: 0;\r\n    display: block;\r\n    opacity: 0.4;\r\n    padding-bottom: inherit;\r\n    font-size: inherit;\r\n    line-height: 180%;\r\n}\r\ntable.b-table > thead > tr > th.sorting::before,\r\ntable.b-table > tfoot > tr > th.sorting::before {\r\n    right: 0.75em;\r\n    content: '\\2191';\r\n}\r\ntable.b-table > thead > tr > th.sorting::after,\r\ntable.b-table > tfoot > tr > th.sorting::after {\r\n    right: 0.25em;\r\n    content: '\\2193';\r\n}\r\ntable.b-table > thead > tr > th.sorting_asc::after,\r\ntable.b-table > thead > tr > th.sorting_desc::before,\r\ntable.b-table > tfoot > tr > th.sorting_asc::after,\r\ntable.b-table > tfoot > tr > th.sorting_desc::before {\r\n    opacity: 1;\r\n}\r\n\r\n/* Stacked table layout */\r\n/* Derived from http://blog.adrianroselli.com/2017/11/a-responsive-accessible-table.html */\r\n/* Always stacked */\r\ntable.b-table.b-table-stacked {\r\n    width: 100%;\r\n}\r\ntable.b-table.b-table-stacked,\r\ntable.b-table.b-table-stacked > tbody,\r\ntable.b-table.b-table-stacked > tbody > tr,\r\ntable.b-table.b-table-stacked > tbody > tr > td,\r\ntable.b-table.b-table-stacked > tbody > tr > th,\r\ntable.b-table.b-table-stacked > caption {\r\n    display: block;\r\n}\r\n\r\n/* Hide stuff we can't deal with, or shouldn't show */\r\ntable.b-table.b-table-stacked > thead,\r\ntable.b-table.b-table-stacked > tfoot,\r\ntable.b-table.b-table-stacked > tbody > tr.b-table-top-row,\r\ntable.b-table.b-table-stacked > tbody > tr.b-table-bottom-row {\r\n    display: none;\r\n}\r\n\r\n/* inter-row top border */\r\ntable.b-table.b-table-stacked > tbody > tr > :first-child {\r\n    border-top-width: 0.4rem;\r\n}\r\n\r\n/* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\r\ntable.b-table.b-table-stacked > tbody > tr > [data-label] {\r\n    display: grid;\r\n    grid-template-columns: 40% auto;\r\n    grid-gap: 0.25rem 1rem;\r\n}\r\n\r\n/* generate row cell \"heading\" */\r\ntable.b-table.b-table-stacked > tbody > tr > [data-label]::before {\r\n    content: attr(data-label);\r\n    display: inline;\r\n    text-align: right;\r\n    overflow-wrap: break-word;\r\n    font-weight: bold;\r\n    font-style: normal;\r\n}\r\n\r\n@media all and (max-width: 575.99px) {\r\n    /* Under SM */\r\n    table.b-table.b-table-stacked-sm {\r\n        width: 100%;\r\n    }\r\n    table.b-table.b-table-stacked-sm,\r\n    table.b-table.b-table-stacked-sm > tbody,\r\n    table.b-table.b-table-stacked-sm > tbody > tr,\r\n    table.b-table.b-table-stacked-sm > tbody > tr > td,\r\n    table.b-table.b-table-stacked-sm > tbody > tr > th,\r\n    table.b-table.b-table-stacked-sm > caption {\r\n        display: block;\r\n    }\r\n    /* hide stuff we can't deal with, or shouldn't show */\r\n    table.b-table.b-table-stacked-sm > thead,\r\n    table.b-table.b-table-stacked-sm > tfoot,\r\n    table.b-table.b-table-stacked-sm > tbody > tr.b-table-top-row,\r\n    table.b-table.b-table-stacked-sm > tbody > tr.b-table-bottom-row {\r\n        display: none;\r\n    }\r\n    /* inter-row top border */\r\n    table.b-table.b-table-stacked-sm > tbody > tr > :first-child {\r\n        border-top-width: 0.4rem;\r\n    }\r\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\r\n    table.b-table.b-table-stacked-sm > tbody > tr > [data-label] {\r\n        display: grid;\r\n        grid-template-columns: 40% auto;\r\n        grid-gap: 0.25rem 1rem;\r\n    }\r\n    /* generate row cell \"heading\" */\r\n    table.b-table.b-table-stacked-sm > tbody > tr > [data-label]::before {\r\n        content: attr(data-label);\r\n        display: inline;\r\n        text-align: right;\r\n        overflow-wrap: break-word;\r\n        font-weight: bold;\r\n        font-style: normal;\r\n    }\r\n}\r\n\r\n@media all and (max-width: 767.99px) {\r\n    /* under MD  */\r\n    table.b-table.b-table-stacked-md {\r\n        width: 100%;\r\n    }\r\n    table.b-table.b-table-stacked-md,\r\n    table.b-table.b-table-stacked-md > tbody,\r\n    table.b-table.b-table-stacked-md > tbody > tr,\r\n    table.b-table.b-table-stacked-md > tbody > tr > td,\r\n    table.b-table.b-table-stacked-md > tbody > tr > th,\r\n    table.b-table.b-table-stacked-md > caption {\r\n        display: block;\r\n    }\r\n    /* hide stuff we can't deal with, or shouldn't show */\r\n    table.b-table.b-table-stacked-md > thead,\r\n    table.b-table.b-table-stacked-md > tfoot,\r\n    table.b-table.b-table-stacked-md > tbody > tr.b-table-top-row,\r\n    table.b-table.b-table-stacked-md > tbody > tr.b-table-bottom-row {\r\n        display: none;\r\n    }\r\n    /* inter-row top border */\r\n    table.b-table.b-table-stacked-md > tbody > tr > :first-child {\r\n        border-top-width: 0.4rem;\r\n    }\r\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\r\n    table.b-table.b-table-stacked-md > tbody > tr > [data-label] {\r\n        display: grid;\r\n        grid-template-columns: 40% auto;\r\n        grid-gap: 0.25rem 1rem;\r\n    }\r\n    /* generate row cell \"heading\" */\r\n    table.b-table.b-table-stacked-md > tbody > tr > [data-label]::before {\r\n        content: attr(data-label);\r\n        display: inline;\r\n        text-align: right;\r\n        overflow-wrap: break-word;\r\n        font-weight: bold;\r\n        font-style: normal;\r\n    }\r\n}\r\n\r\n@media all and (max-width: 991.99px) {\r\n    /* under LG  */\r\n    table.b-table.b-table-stacked-lg {\r\n        width: 100%;\r\n    }\r\n    table.b-table.b-table-stacked-lg,\r\n    table.b-table.b-table-stacked-lg > tbody,\r\n    table.b-table.b-table-stacked-lg > tbody > tr,\r\n    table.b-table.b-table-stacked-lg > tbody > tr > td,\r\n    table.b-table.b-table-stacked-lg > tbody > tr > th,\r\n    table.b-table.b-table-stacked-lg > caption {\r\n        display: block;\r\n    }\r\n    /* hide stuff we can't deal with, or shouldn't show */\r\n    table.b-table.b-table-stacked-lg > thead,\r\n    table.b-table.b-table-stacked-lg > tfoot,\r\n    table.b-table.b-table-stacked-lg > tbody > tr.b-table-top-row,\r\n    table.b-table.b-table-stacked-lg > tbody > tr.b-table-bottom-row {\r\n        display: none;\r\n    }\r\n    /* inter-row top border */\r\n    table.b-table.b-table-stacked-lg > tbody > tr > :first-child {\r\n        border-top-width: 0.4rem;\r\n    }\r\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\r\n    table.b-table.b-table-stacked-lg > tbody > tr > [data-label] {\r\n        display: grid;\r\n        grid-template-columns: 40% auto;\r\n        grid-gap: 0.25rem 1rem;\r\n    }\r\n    /* generate row cell \"heading\" */\r\n    table.b-table.b-table-stacked-lg > tbody > tr > [data-label]::before {\r\n        content: attr(data-label);\r\n        display: inline;\r\n        text-align: right;\r\n        overflow-wrap: break-word;\r\n        font-weight: bold;\r\n        font-style: normal;\r\n    }\r\n}\r\n\r\n@media all and (max-width: 1199.99px) {\r\n    /* under XL  */\r\n    table.b-table.b-table-stacked-xl {\r\n        width: 100%;\r\n    }\r\n    table.b-table.b-table-stacked-xl,\r\n    table.b-table.b-table-stacked-xl > tbody,\r\n    table.b-table.b-table-stacked-xl > tbody > tr,\r\n    table.b-table.b-table-stacked-xl > tbody > tr > td,\r\n    table.b-table.b-table-stacked-xl > tbody > tr > th,\r\n    table.b-table.b-table-stacked-xl > caption {\r\n        display: block;\r\n    }\r\n    /* hide stuff we can't deal with, or shouldn't show */\r\n    table.b-table.b-table-stacked-xl > thead,\r\n    table.b-table.b-table-stacked-xl > tfoot,\r\n    table.b-table.b-table-stacked-xl > tbody > tr.b-table-top-row,\r\n    table.b-table.b-table-stacked-xl > tbody > tr.b-table-bottom-row {\r\n        display: none;\r\n    }\r\n    /* inter-row top border */\r\n    table.b-table.b-table-stacked-xl > tbody > tr > :first-child {\r\n        border-top-width: 0.4rem;\r\n    }\r\n    /* convert TD/TH contents to \"cells\". Caveat: child elements become cells! */\r\n    table.b-table.b-table-stacked-xl > tbody > tr > [data-label] {\r\n        display: grid;\r\n        grid-template-columns: 40% auto;\r\n        grid-gap: 0.25rem 1rem;\r\n    }\r\n    /* generate row cell \"heading\" */\r\n    table.b-table.b-table-stacked-xl > tbody > tr > [data-label]::before {\r\n        content: attr(data-label);\r\n        display: inline;\r\n        text-align: right;\r\n        overflow-wrap: break-word;\r\n        font-weight: bold;\r\n        font-style: normal;\r\n    }\r\n}\r\n\r\n/* Details row styling */\r\ntable.b-table > tbody > tr.b-table-details > td {\r\n    border-top: none;\r\n}\r\n", ""]);
 
 // exports
 
@@ -63099,7 +63099,7 @@ var normalizeComponent = __webpack_require__(8)
 /* script */
 var __vue_script__ = __webpack_require__(271)
 /* template */
-var __vue_template__ = __webpack_require__(272)
+var __vue_template__ = null
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -63172,7 +63172,7 @@ exports = module.exports = __webpack_require__(4)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -63187,12 +63187,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__family_plan___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__family_plan__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tow_person_plan__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tow_person_plan___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__tow_person_plan__);
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validator__ = __webpack_require__(308);
+
+
 
 
 
@@ -63203,18 +63200,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     name: "sign_up",
 
+    mixins: [__WEBPACK_IMPORTED_MODULE_2__validator__["a" /* default */]],
+
     data: function data() {
 
         return {
-
             step: 1
-
         };
     },
 
 
     methods: {
         next: function next() {
+            this.checkForm();
 
             this.step = this.step + 1;
         },
@@ -63231,26 +63229,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 272 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div")
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-42a26b62", module.exports)
-  }
-}
-
-/***/ }),
+/* 272 */,
 /* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -63846,6 +63825,107 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+    data: function data() {
+        return {
+            errors: [],
+            email: null,
+            password: null,
+            fristName: null,
+            lastName: null,
+            address: null,
+            city: null,
+            cardNumber: null,
+            security: null
+        };
+    },
+
+
+    methods: {
+        checkForm: function checkForm(e) {
+            this.errors = [];
+
+            if (this.step == 1) {
+                if (!this.email) {
+                    this.errors.push('البريد الالكتروني مطلوب.');
+                } else if (!this.validEmail(this.email)) {
+                    this.errors.push('الايميل غير صحيح');
+                }
+
+                if (!this.password) {
+                    this.errors.push('كلمة المرور مطلوبة.');
+                } else if (this.password.length < 8) {
+                    this.errors.push('يجب ان تكون كلمة المرور اكثر من 8');
+                }
+            }
+
+            if (this.step == 3) {
+                this.errors = [];
+
+                if (!this.fristName) {
+                    this.errors.push('الاسم الاول مطلوب.');
+                }
+
+                if (!this.lastName) {
+                    this.errors.push('الاسم الاخير مطلوب.');
+                }
+
+                if (!this.address) {
+                    this.errors.push('العنوان مطلوب.');
+                }
+
+                if (!this.city) {
+                    this.errors.push('المدينة مطلوب.');
+                }
+
+                if (!this.cardNumber) {
+                    this.errors.push('رقم البطاقة مطلوب.');
+                }
+
+                if (!this.security) {
+                    this.errors.push('رمز الحماية مطلوب.');
+                }
+            }
+
+            if (!this.errors.length) {
+                return true;
+            }
+
+            e.preventDefault();
+        },
+
+        validEmail: function validEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+    }
+
+});
 
 /***/ })
 /******/ ]);

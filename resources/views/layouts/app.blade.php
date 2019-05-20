@@ -33,6 +33,12 @@
         <script src="{{asset('files/'.App::getLocale().'/js/on_the_menu.js')}}"></script>
     @endif
 
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+
 </head>
 <body>
 

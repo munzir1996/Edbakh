@@ -75,17 +75,27 @@
                     <div class="col-sm-6 order-sm-2 col-md-4 {{App::isLocale('en')? 'mr-auto': 'ml-auto'}}">
                         <form>
 
+                            <ul class="alert alert-danger" role="alert" v-if="errors.length" v-cloak>
+                                <li v-for="error in errors">
+                                    <strong>خطأ:</strong> <p v-text="error"></p>
+                                </li>
+                            </ul>
+
                             <div class="row">
                                 <div class="col-sm-12 form-group">
-                                    <label for="email" class="sign_up_label">{{__('sign.email')}}</label>
-                                    <input id="email" type="email" class="sign_up_input">
+                                    <label for="email" class="sign_up_label">{{__('البريد الاكتروني')}}</label>
+                                    <input id="email" type="email" class="sign_up_input" v-model="email">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-sm-12 form-group">
                                     <label for="password" class="sign_up_label">{{__('sign.password')}}</label>
-                                    <input id="password" type="password" class="sign_up_input">
+                                    <input id="password" type="password" class="sign_up_input" v-model="password">
+
+                                    {{-- <div class="alert alert-danger" role="alert">
+                                        <strong>خطأ:</strong> {{ __('كلمة المرور مطلوبة') }}
+                                    </div> --}}
                                 </div>
                             </div>
 
@@ -184,6 +194,14 @@
                             <form>
                                 <div class="mb-30">
 
+                                    <ul class="alert alert-danger" role="alert" v-if="errors.length" v-cloak>
+                                        <strong>خطأ:</strong>
+
+                                        <li v-for="error in errors">
+                                            <span v-text="error"></span>
+                                        </li>
+                                    </ul>
+
                                     <div class="mb-10 row">
                                         <div class="col-md-12">
                                             <h4>{{__('sign.information')}}</h4>
@@ -194,12 +212,12 @@
 
                                         <div class="form-group col-lg-5">
                                             <label  class="checkout_label">{{__('sign.first')}}</label>
-                                            <input  type="text" class="checkout_input">
+                                            <input  type="text" class="checkout_input" v-model="fristName">
                                         </div>
 
                                         <div class="form-group col-lg-5">
                                             <label  class="checkout_label">{{__('sign.last')}}</label>
-                                            <input  type="text" class="checkout_input">
+                                            <input  type="text" class="checkout_input" v-model="lastName">
                                         </div>
 
                                     </div>
@@ -208,7 +226,7 @@
 
                                         <div class="form-group col-lg-10">
                                             <label  class="checkout_label">{{__('sign.address')}}</label>
-                                            <input  type="text" class="checkout_input">
+                                            <input  type="text" class="checkout_input" v-model="address">
                                         </div>
 
                                     </div>
@@ -217,7 +235,7 @@
 
                                         <div class="form-group col-lg-6">
                                             <label  class="checkout_label">{{__('sign.city')}}</label>
-                                            <input  type="text" class="checkout_input">
+                                            <input  type="text" class="checkout_input" v-model="city">
                                         </div>
 
                                     </div>
@@ -236,12 +254,12 @@
 
                                         <div class="form-group col-lg-5">
                                             <label  class="checkout_label">{{__('sign.card_number')}}</label>
-                                            <input  type="text" class="checkout_input">
+                                            <input  type="text" class="checkout_input" v-model="cardNumber">
                                         </div>
 
                                         <div class="form-group col-lg-3">
                                             <label  class="checkout_label">{{__('sign.security')}}</label>
-                                            <input  type="text" class="checkout_input">
+                                            <input  type="text" class="checkout_input" v-model="security">
                                         </div>
 
                                     </div>
