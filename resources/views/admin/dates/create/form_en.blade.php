@@ -1,6 +1,6 @@
 <div class="row">
 
-    <div class="form-group col-12">
+  {{-- <div class="form-group col-12">
         <label>Plan</label>
         <select name="plan_id" class="form-control">
             <option></option>
@@ -8,7 +8,7 @@
             <option value="{{$plan->id}}">{{$plan->title_en}}</option>
             @endforeach
         </select>
-    </div>
+    </div>  --}}
     
     <div class="form-group col-12">
         <label>Week</label>

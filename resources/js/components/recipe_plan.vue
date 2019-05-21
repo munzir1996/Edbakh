@@ -68,7 +68,7 @@
                         //window.Alert.error('Oops! Something went wrong!');
                         console.log("error");
                         console.log(error.data);
-                        window.location.pathname = '/ar/pricing'
+                        window.location.pathname = '/ar/login'
                     });
                     
                 }else{
@@ -91,7 +91,7 @@
                         console.log("error");
                         console.log(error.data);
                         alert(error);
-                        window.location.pathname = '/en/pricing'
+                        window.location.pathname = '/en/login'
                     });
                 }
             }

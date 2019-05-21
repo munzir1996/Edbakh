@@ -5,6 +5,27 @@ window.Vue = require('vue');
 
 import BootstrapVue from 'bootstrap-vue'
 
+import Swal from 'sweetalert2'
+window.swal = Swal;
+
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'center',
+    showConfirmButton: false,
+    timer: 3000
+  });
+
+  window.Toast = Toast;
+
+  const Alert = Swal.mixin({
+    toast: false,
+    position: 'center',
+    showConfirmButton: true,
+  });
+
+  window.Alert = Alert;
+
+
 Vue.use(BootstrapVue);
 
 
@@ -31,6 +52,8 @@ Vue.component('recipe_ingredients', require('./components/recipe_ingredients'));
 
 Vue.component('sign_up', require('./components/sign_up'));
 
+Vue.component('sign_up_plan', require('./components/sign_up_plan'));
+
 Vue.component('cookbook', require('./components/cookbook'));
 
 Vue.component('testimonial_section', require('./components/testimonial_section'));
@@ -40,5 +63,17 @@ Vue.component('recipe_plan', require('./components/recipe_plan'));
 const app = new Vue({
 
     el: '#app',
+    data() {
+        return {
+            planId:"",
+            servingCost:"",
+            weekCost:"",
+            shippingCost:"",
+            total:"",
+            serve:"",
+            title:"",
+            step:1,
+        }
+    },
 
 });

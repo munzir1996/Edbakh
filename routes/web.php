@@ -1,5 +1,8 @@
 <?php
 
+
+Route::post('/register', 'RegisterController@user');
+
 Route::get('/admin', 'Auth\AdminLoginController@loginPage')->name('login');
 Route::post('/admin/login', 'Auth\AdminLoginController@login');
 
@@ -56,7 +59,7 @@ Route::prefix('admin')->middleware('auth:admin')->group(function () {
     Route::get('/plans/{id}/send_to_trash', 'Admin\PlanController@send_to_trash');
     Route::get('/plans/{id}/remove_form_trash', 'Admin\PlanController@remove_from_trash');
     
-    Route::resource('users', 'UserController');
+    Route::resource('users', 'Admin\UserController');
     Route::resource('settings', 'Admin\SettingController');
     Route::resource('plans', 'Admin\PlanController');
     });
@@ -66,24 +69,25 @@ Route::prefix('admin')->middleware('auth:admin')->group(function () {
 
 //  Route::post('/admin/login', 'LoginController@login');
 
+Route::post('login', 'LoginController@login')->name('login');
 Route::get('/logout', 'LoginController@logout');
 
 if (in_array(Request::segment(1), Config::get('app.alt_langs'))) {
-
+    
     App::setLocale(Request::segment(1));
-
+    
     Config::set('app.locale_prefix', Request::segment(1));
-
+    
 }
 
 /*foreach(Lang::get('main') as $k => $v) {
-
+    
     Route::pattern($k, $v);
-
+    
 }*/
 
 Route::get('/', function () {
-
+    
     return view('index');
 
 });
@@ -93,33 +97,25 @@ Route::get('/send/email', 'MailController@mail');
 Route::group(array('prefix' => Config::get('app.locale_prefix')), function() {
 
     Route::get('/', function () {
-
+        
     return view('index');
-
-    });
-
-    // Route::get('/on_the_menu', function () {
-
-    //     $current = 'on_the_menu';
-
-    //     return view('on_the_menu', compact('current'));
-
-    // });
+    
+});
 
     Route::get('/how_it_work', function () {
 
         $current = 'how_it_work';
-
+        
         return view('how_it_work', compact('current'));
 
     });
-
+    
     // Route::get('/pricing', 'Admin\PlanController@client_pricing_page');
-
+    
     Route::get('/gifts', function () {
-
+        
         $current = 'gifts';
-
+        
         return view('gifts', compact('current'));
 
     });
@@ -137,27 +133,26 @@ Route::group(array('prefix' => Config::get('app.locale_prefix')), function() {
     Route::get('/generate-pdf','PdfController@generatePDF');
     //Onthemenu
     Route::resource('/on_the_menu', 'OnthemenuController');
+    Route::get('/user/on_the_menu', 'OnthemenuController@userIndex');
     //Recipe
     Route::resource('/recipe', 'RecipeController');
     //Pricing
     Route::resource('/pricing', 'PriceController');
-        
+    
     Route::get('/recipes', function () {
-
+        
         return view('recipe_opening');
 
     });
 
-    Route::get('/sign_up', function (){
 
-        return view('sign_up');
-
-    });
-
+    Route::get('/sign_up', 'Auth\RegisterController@index');
+    Route::get('/sign_up/recipes/{id}', 'Auth\RegisterController@recipes');
+    
     Route::get('/login', function (){
-
+        
         return view('login');
-
+        
     });
 
 });

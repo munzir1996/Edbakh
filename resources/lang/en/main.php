@@ -18,6 +18,7 @@ return [
     'header_pricing' => 'pricing',
     'header_login' => 'LOG IN',
     'header_sign_up' => 'SIGN UP',
+    'header_logout' => 'LOGOUT',
 
     /*footer*/
     'footer_cookbook' => 'cook book',

@@ -50,8 +50,6 @@
                                             <th> # </th>
                                             <th>Date Arabic</th>
                                             <th>Date English</th>
-                                            <th>Plan Arabic</th>
-                                            <th>Date English</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -61,9 +59,9 @@
                                         <tr>
                                             <td>{{$date->id}}</td>
                                             <td>{{$date->date_ar}}</td>
-                                            <td>{{$date->plan->title_ar}}</td>
+                                            {{-- <td>{{$date->plan->title_ar}}</td> --}}
                                             <td>{{$date->date_en}}</td>
-                                            <td>{{$date->plan->title_en}}</td>
+                                            {{-- <td>{{$date->plan->title_en}}</td> --}}
                                             <td>
                                                 <form action="{{route('dates.destroy', $date->id)}}" method="POST">
                                                     @csrf {{ method_field('DELETE') }}

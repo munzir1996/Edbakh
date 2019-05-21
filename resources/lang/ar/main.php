@@ -18,6 +18,7 @@ return [
     'header_pricing' => 'الأسعار',
     'header_login' => 'تسجيل الدخول',
     'header_sign_up' => 'تسجيل',
+    'header_logout' => 'تسجيل خروج',
 
     /*footer*/
     'footer_cookbook' => 'كتاب الطبخ',

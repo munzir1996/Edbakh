@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Recipe extends Model
 {
+    const SHOW = true;
     /**
      * The attributes that are mass assignable.
      *

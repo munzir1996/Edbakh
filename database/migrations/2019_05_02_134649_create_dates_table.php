@@ -17,7 +17,7 @@ class CreateDatesTable extends Migration
             $table->increments('id');
             $table->string('date_ar');
             $table->string('date_en');
-            $table->unsignedInteger('plan_id');
+            $table->unsignedInteger('plan_id')->nullable();
             $table->timestamps();
 
             $table->foreign('plan_id')->references('id')->on('plans')->onDelete('cascade');

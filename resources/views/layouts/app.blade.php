@@ -33,6 +33,12 @@
         <script src="{{asset('files/'.App::getLocale().'/js/on_the_menu.js')}}"></script>
     @endif
 
+
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -53,6 +59,7 @@
 <script src="{{asset('files/'.App::getLocale().'/js/parallax.min.js')}}"></script>
 <script src="{{asset('files/'.App::getLocale().'/js/mail-script.js')}}"></script>
 <script src="{{asset('files/'.App::getLocale().'/js/toastr.min.js')}}"></script>
+<script src="{{asset('files/'.App::getLocale().'/js/parsley.min.js')}}"></script>
 @include('layouts.messages')
 </body>
 

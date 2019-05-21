@@ -10,9 +10,9 @@
     <section class="food-menu-item">
 
         <tabs>
-            @foreach ($subscribes as $index => $plan)
+            @foreach ($plans as $index => $plan)
             <!-- وصفات عائلية -->
-            <tab name="{{$plan->plan['title_'.App::getLocale()]}}" @if ($plan->id == 1) :selected="true" @endif>
+            <tab name="{{$plan['title_'.App::getLocale()]}}" @if ($plan->id == 1) :selected="true" @endif>
 
                 <!--week 1-->
 

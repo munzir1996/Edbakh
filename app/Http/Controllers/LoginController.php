@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-
+use App;
 
 class LoginController extends Controller
 {
@@ -19,28 +19,17 @@ class LoginController extends Controller
     public function login(Request $request)
     {
 
-        $credentials = $request->only('email', 'password');
+        $credentials = $request->only('phone', 'password');
 
         if (Auth::attempt($credentials)) {
 
-            if(Auth::user()->role == 1) {
+            if(App::getLocale() == 'ar') {
 
-                return redirect(url('/admin/home'));
+                return redirect(url('/ar'));
 
             }else {
 
-                if(Auth::user()->activity == 1){
-
-                    return redirect(url('/home'));
-
-                }else {
-
-                    Auth::logout();
-
-                    return back()
-                        ->withErrors(['account_closed' => 'عفواً تم اغلاق الحساب ، قم بمراجعة الادارة']);
-
-                }
+                return redirect(url('/en'));                
 
             }
 
@@ -61,7 +50,12 @@ class LoginController extends Controller
 
         Auth::logout();
 
-        return redirect()->intended('/admin');
+        if (App::getLocale() == 'ar') {
+            return redirect(url('/ar'));
+        } else {
+            return redirect(url('/en'));
+        }
+        
 
     }
 

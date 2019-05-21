@@ -52,14 +52,14 @@ class DateController extends Controller
         $this->validate($request, [
             'date_en' => 'required',
             'date_ar' => 'required',
-            'plan_id' => 'required',
+            //'plan_id' => 'required',
         ]);
 
         $date = new Date;
 
         $date->date_en  = $request->date_en;
         $date->date_ar  = $request->date_ar;
-        $date->plan_id  = $request->plan_id;
+        //$date->plan_id  = $request->plan_id;
         
         // Shows  message
         if($date->save()){
@@ -94,13 +94,13 @@ class DateController extends Controller
     public function edit($id)
     {
         $date = Date::findOrFail($id);
-        $plans = Plan::all();
+        //$plans = Plan::all();
         
         $active = 'date';
 
         $sub_active = 'date_list';
 
-        return view('admin.dates.edit.main', compact(['plans', 'date', 'active' , 'sub_active']));
+        return view('admin.dates.edit.main', compact([ 'date', 'active' , 'sub_active']));
     }
 
     /**
@@ -118,12 +118,12 @@ class DateController extends Controller
         $this->validate($request, [
             'date_en' => 'required',
             'date_ar' => 'required',
-            'plan_id' => 'required',
+            //'plan_id' => 'required',
         ]);
 
         $date->date_en  = $request->date_en;
         $date->date_ar  = $request->date_ar;
-        $date->plan_id  = $request->plan_id;
+        //$date->plan_id  = $request->plan_id;
 
         // Shows  message
         if($date->save()){
