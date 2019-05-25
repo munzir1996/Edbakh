@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\User;
+use App\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Controllers\Controller;
@@ -39,7 +40,7 @@ class UserController extends Controller
     public function edit($id)
     {
 
-        $user  = User::find($id);
+        $user  = Admin::find($id);
 
         $active = 'users_edit';
 
@@ -52,7 +53,7 @@ class UserController extends Controller
     {
 
 
-        $user = User::find($id);
+        $user = Admin::find($id);
 
         $this->validate($request, [
             'name' => 'required',

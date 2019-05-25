@@ -9,12 +9,14 @@ use App\Subscribe;
 use Auth;
 use Illuminate\Http\Request;
 use Session;
-
+use App\Faq;
+use App\Date;
+use App\Recipe;
 class PriceController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth', ['only' => 'store']);
+        $this->middleware('auth', ['only' => 'update','show','store']);
     }
     /**
      * Display a listing of the resource.
@@ -23,12 +25,13 @@ class PriceController extends Controller
      */
     public function index()
     {
+        $faqs = Faq::all()->take(6);
         $plans = Plan::all();
         $current = 'pricing';
 
         // dd($setting);
 
-        return view('pricing.main', compact(['current', 'plans',]));
+        return view('pricing.main', compact(['current', 'plans', 'faqs', ]));
     }
 
     /**
@@ -50,45 +53,40 @@ class PriceController extends Controller
     public function store(Request $request)
     {
         
-        //dd($request);
         $this->validate($request, [
             'plan_id' => 'required',
-            'no_meals' => 'required',
-            'total_cost' => 'required',
+            'recipes_id' => 'required',
             'meal_cost' => 'required',
+            'no_meals' => 'required',
             'shipping_cost' => 'required',
+            'total_cost' => 'required',
         ]);
 
-        $status = Subscribe::where('plan_id', $request->plan_id)->first();
+        $subscribe = new Subscribe;
 
-        if ($status === null) {
-            $subscribe = new Subscribe;
+        $subscribe->user_id  = Auth::user()->id;
+        $subscribe->plan_id  = $request->plan_id;
+        $subscribe->ordered  = $request->no_meals;
+        $subscribe->no_meals  = $request->no_meals;
+        $subscribe->total_cost  = $request->total_cost;
+        $subscribe->meal_cost  = $request->meal_cost;
+        $subscribe->shipping_cost  = $request->shipping_cost;
 
-            $subscribe->user_id  = Auth::user()->id;
-            $subscribe->plan_id  = $request->plan_id;
-            $subscribe->ordered  = Subscribe::ZERO;
-            $subscribe->no_meals  = $request->no_meals;
-            $subscribe->total_cost  = $request->total_cost;
-            $subscribe->meal_cost  = $request->meal_cost;
-            $subscribe->shipping_cost  = $request->shipping_cost;
-            
-            // Shows  message
-            if($subscribe->save()){
-                Session::flash('success', 'Subscribed Sucsessful');
-                return($request);
-            }else {
+        if ($subscribe->save()) {
 
-                Session::flash('error', 'Subscribe Failed');
-                return($request);
+            foreach ($request->recipes_id as $recipe_id) {
+                $order = new Order;
+                $order->recipe_id = $recipe_id;
+                $order->user_id = Auth::user()->id;
+                $order->status = 0; 
+                $order->save();
             }
-        } else {
-                Session::flash('error', 'You are Subscribed');
-        }
-        
+            
+            Session::flash('success', 'Subscribed Sucsessful');
+        }else{
 
-        // dd($status);
-
-        
+            Session::flash('error', 'Subscribed Failed');
+        }        
 
     }
 
@@ -100,7 +98,10 @@ class PriceController extends Controller
      */
     public function show($id)
     {
-        //
+        $recipes = Recipe::where('plan_id', $id)->get();
+        // $dates = Date::all();
+        
+        return(['recipes' => $recipes,]);
     }
 
     /**
@@ -123,7 +124,27 @@ class PriceController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $subscribes = Subscribe::where('user_id', Auth::user()->id)->get();
+        
+        if($subscribes == null){
+            $recipes = Recipe::where('plan_id', $id)->get();
+            $dates = Date::all();
+            $planId = $id;
+            $meal_cost = $request->meal_cost;
+            $no_meals = $request->no_meals;
+            $shipping_cost = $request->shipping_cost;
+            $total_cost = $request->total_cost;
+            
+            return view('pricing.show', compact(['recipes', 'dates', 'planId', 'meal_cost', 
+            'no_meals', 'shipping_cost', 'total_cost',]));
+            // return(['recipes' => $recipes,]);
+        }else{
+            Session::flash('error', 'Already Subscribed');
+            return redirect()->back();
+        }
+        
+
     }
 
     /**

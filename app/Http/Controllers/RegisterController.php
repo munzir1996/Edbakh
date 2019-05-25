@@ -56,7 +56,6 @@ class RegisterController extends Controller
             auth()->login($user);
 
             Session::flash('success', 'Register Sucsessful');
-            return "nigga";
         }else{
 
             Session::flash('error', 'Register Failed');

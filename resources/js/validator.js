@@ -21,7 +21,7 @@ export default {
                 if (this.language === 'ar') {
                     if (!this.phone) {
                         this.errors.push('رقم الهاتف مطلوب.');                    
-                    } else if (this.phone == 10) {
+                    } else if (this.phone.length > 0 && this.phone.length < 10) {
                         this.errors.push('يجب ان يكون رقم الهاتف 10 ارقام');
                     }
     

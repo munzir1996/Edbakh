@@ -60,7 +60,9 @@
                                             @foreach($orders as $order)
                                         <tr>
                                             <td>{{$order->id}}</td>
-                                            <td>{{$order->user->name}}</td>
+                                            <td>
+                                                {{$order->user->first_name}} {{$order->user->last_name}}
+                                            </td>
                                             <td>{{$order->recipe->title_en}}</td>
                                             <td>{{$order->recipe->title_ar}}</td>
                                             <td>
@@ -78,7 +80,7 @@
                                                     </a>
                     
                                                     <button type="submit" class="btn red btn-sm btn-outline sbold uppercase">
-                                                        <i class="fa fa-edit">حذف</i>
+                                                        <i class="fa fa-trash">حذف</i>
                                                     </button>
                                                 </form>
                                             </td>

@@ -14,6 +14,8 @@ use App\Date;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Image;
+use Storage;
+use File;
 
 class RecipeController extends Controller
 {
@@ -287,6 +289,8 @@ class RecipeController extends Controller
     public function destroy($id)
     {
         $recipe = Recipe::findOrFail($id);
+       
+        File::delete('public/uploads/'.$recipe->picture);
         
         // Shows .toaster message
         if($recipe->delete()){

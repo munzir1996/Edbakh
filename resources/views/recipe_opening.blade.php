@@ -187,7 +187,7 @@
 
                     <div class="justify-content-between col-12 mb-3">
                         <span class="nutrition_name">{{__('anrecipe.nutrition6')}}</span>
-                        <span class="nutrition_value {{App::isLocale('en')? 'float-right': 'float-left'}}">{{$nutrition->Sugar}} {{__('anrecipe.nutrition6_value')}}</span>
+                        <span class="nutrition_value {{App::isLocale('en')? 'float-right': 'float-left'}}">{{$nutrition->sugar}} {{__('anrecipe.nutrition6_value')}}</span>
                     </div>
 
                     <div class="justify-content-between col-12 mb-3">

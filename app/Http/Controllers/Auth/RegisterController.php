@@ -102,9 +102,9 @@ class RegisterController extends Controller
     public function recipes($id)
     {
         $recipes = Recipe::where('plan_id', $id)->get();
-        $dates = Date::all();
+        // $dates = Date::all();
         
-        return(['recipes' => $recipes, 'dates' => $dates]);
+        return(['recipes' => $recipes,]);
     }
 
 }

@@ -7,6 +7,8 @@ use App\Recipe;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Image;
+use Storage;
+use File;
 
 class InstructionController extends Controller
 {
@@ -139,7 +141,6 @@ class InstructionController extends Controller
             'title_ar' => 'required',
             'description_ar' => 'required',
             'title_en' => 'required',
-            'picture' => 'required',
             'description_en' => 'required',
         ]);
 
@@ -189,6 +190,8 @@ class InstructionController extends Controller
     public function destroy($id)
     {
         $instruction = Instruction::findOrFail($id);
+
+        File::delete('public/uploads/'.$instruction->picture);
         
         // Shows .toaster message
         if($instruction->delete()){

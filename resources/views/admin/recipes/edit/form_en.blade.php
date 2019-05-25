@@ -19,19 +19,19 @@
         <span class="text-danger">{{$errors->first('description_en')}}</span>
     </div>
 
-    <div class="form-group col-6">
+    <div class="form-group col-4">
         <label>Calories</label>
         <input type="number" name="calories" value="{{$recipe->calories}}" class="form-control">
         <span class="text-danger">{{$errors->first('calories')}}</span>
     </div>
 
-    <div class="form-group col-6">
+    <div class="form-group col-4">
         <label>Duration (Time)</label>
         <input type="number" name="time" value="{{$recipe->time}}" class="form-control">
         <span class="text-danger">{{$errors->first('time')}}</span>
     </div>
 
-    <div class="form-group col-6">
+    <div class="form-group col-4">
         <label>Level</label>
         <input type="number" name="level" value="{{$recipe->level}}" class="form-control">
         <span class="text-danger">{{$errors->first('level')}}</span>
@@ -53,7 +53,8 @@
             <option></option>
             @foreach($seasons as $season)
             <option value="{{$season->id}}" {{ $season->id == $recipe->season_id ? 'selected' : '' }}>
-                {{$season->name_en}}</option>
+                {{$season->name_en}}
+            </option>
             @endforeach
         </select>
     </div>
@@ -62,7 +63,8 @@
         <select name="dish_id" class="form-control">
             <option></option>
             @foreach($dishes as $dish)
-            <option value="{{$dish->id}}" {{ $dish->id == $recipe->dish_id ? 'selected' : '' }}>{{$dish->name_en}}
+            <option value="{{$dish->id}}" {{ $dish->id == $recipe->dish_id ? 'selected' : '' }}>
+                {{$dish->name_ar}}
             </option>
             @endforeach
         </select>
@@ -78,7 +80,7 @@
     <label>Puts</label>
     <select class="form-control select2-multi col-12" name="puts[]" multiple="multiple">
         @foreach($puts as $put)
-        <option value="{{ $put->id }}">{{ $put->title_en }}</option>
+        <option value="{{ $put->id }}">{{$put->name_en }}</option>
         @endforeach
     </select>
 

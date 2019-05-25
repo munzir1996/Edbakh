@@ -66,17 +66,23 @@
                                             <td>{{$subscribe->meal_cost}}</td>
                                             <td>{{$subscribe->total_cost}}</td>
                                             <td>{{$subscribe->no_meals}}</td>
-                                            <td>{{$subscribe->user->name}}</td>
+                                            <td>
+                                                {{$subscribe->user->first_name}} {{$subscribe->user->last_name}}
+                                            </td>
                                             <td>{{$subscribe->plan->title_en}}</td>
                                             <td>
                                                 <form action="{{route('subscribes.destroy', $subscribe->id)}}" method="POST">
                                                     @csrf {{ method_field('DELETE') }}
+                                                    
+                                                    <a href="{{route('subscribes.show', $subscribe->id)}}" class="btn dark btn-sm btn-outline sbold uppercase">
+                                                        <i class="fa fa-eye">عرض</i>
+                                                    </a>
                                                     <a href="{{route('subscribes.edit', $subscribe->id)}}" class="btn dark btn-sm btn-outline sbold uppercase">
                                                         <i class="fa fa-edit"> تعديل </i>
                                                     </a>
                     
                                                     <button type="submit" class="btn red btn-sm btn-outline sbold uppercase">
-                                                        <i class="fa fa-edit">حذف</i>
+                                                        <i class="fa fa-trash">حذف</i>
                                                     </button>
                                                 </form>
                                             </td>

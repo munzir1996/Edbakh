@@ -25,6 +25,9 @@
 
                 shippingCost: this.shipping,
 
+                show: true,
+                recipes: {},
+
             }
 
         },
@@ -50,55 +53,70 @@
             },
 
             subscribe(id){
-                if (this.language == 'ar') {
-                    axios.post('/ar/pricing', {
-                        plan_id: id,
-                        meal_cost: this.servingCost,
-                        no_meals: this.weekCost,
-                        shipping_cost: this.shippingCost,
-                        total_cost: this.total,
-                    })
-                    .then(response => {
-                        //window.Alert.success('Subscribe Added!');
-                        console.log("response");
-                        console.log(response.data);
-                        window.location.pathname = '/ar/pricing'
-                    })
-                    .catch(error => {
-                        //window.Alert.error('Oops! Something went wrong!');
-                        console.log("error");
-                        console.log(error.data);
-                        window.location.pathname = '/ar/login'
-                    });
+                this.$Progress.start();
+                axios.get('/ar/pricing/'+ id)
+                .then(response => {
+                    console.log("response");
+                    console.log(response.data);
+                    console.log(response.data.recipes);
+                    this.recipes = response.data.recipes;
+
+                    this.show = !this.show;
+                    this.$Progress.finish();
+                    //this.meals = parseInt(this.$root.weekCost);
+                    //++this.$root.step;
                     
-                }else{
-                    axios.post('/en/pricing', {
-                        plan_id: id,
-                        meal_cost: this.servingCost,
-                        no_meals: this.weekCost,
-                        shipping_cost: this.shippingCost,
-                        total_cost: this.total,
-                    })
-                    .then(response => {
-                        //window.Alert.success('Subscribe Added!');
-                        console.log("response");
-                        console.log(response.data);
-                        window.location.pathname = '/en/pricing'
+                })
+                .catch(error => {
+                    console.log("error");
+                    console.log(error.data);
+                });
+                // if (this.language == 'ar') {
+                //     axios.post('/ar/pricing', {
+                //         plan_id: id,
+                //         meal_cost: this.servingCost,
+                //         no_meals: this.weekCost,
+                //         shipping_cost: this.shippingCost,
+                //         total_cost: this.total,
+                //     })
+                //     .then(response => {
+                //         console.log("response");
+                //         console.log(response.data);
+                //         window.location.pathname = '/ar/pricing'
+                //         this.$Progress.finish();
+                //     })
+                //     .catch(error => {
+                //         console.log("error");
+                //         console.log(error.data);
+                //         window.location.pathname = '/ar/login'
+                //     });
+                    
+                // }else{
+                //     axios.post('/en/pricing', {
+                //         plan_id: id,
+                //         meal_cost: this.servingCost,
+                //         no_meals: this.weekCost,
+                //         shipping_cost: this.shippingCost,
+                //         total_cost: this.total,
+                //     })
+                //     .then(response => {
+                //         console.log("response");
+                //         console.log(response.data);
+                //         window.location.pathname = '/en/pricing'
+                //         this.$Progress.finish();
                         
-                    })
-                    .catch(error => {
-                        //window.Alert.error('Oops! Something went wrong!');
-                        console.log("error");
-                        console.log(error.data);
-                        alert(error);
-                        window.location.pathname = '/en/login'
-                    });
+                //     })
+                //     .catch(error => {
+                //         console.log("error");
+                //         console.log(error.data);
+                //         alert(error);
+                //         window.location.pathname = '/en/login'
+                //     });
                 }
             }
 
         }
 
-    }
 </script>
 
 <style scoped>

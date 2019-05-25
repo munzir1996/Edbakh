@@ -23,7 +23,7 @@
             <recipe_plan inline-template serving="{{$plan->price_per_serve}}" week="{{$plan->weeks[0]->week}}"
                 shipping="{{$plan->weeks[0]->shipping_cost}}" language="{{App::getLocale()}}">
 
-                <div class="col-md-5 col-sm-12 mb-5 ml-auto mr-auto"
+                <div class="col-md-5 col-sm-12 mb-5 ml-auto mr-auto" v-if="show"
                     style="padding-right: 0 !important; padding-left: 0 !important;">
 
                     <div class="pricing_plan">
@@ -106,15 +106,24 @@
                                 </p>
 
                             </div>
-                            {{-- <form action="{{route('pricing.store')}}" method="post"> --}}
+                            <form action="{{route('pricing.update', $plan->id)}}" method="POST">
+                                
+                                @method('PUT')
                                 @csrf
                                 <div class="plan_button">
 
-                                    <button class="plan_button_content"
-                                        @click="subscribe({{$plan->id}})">{{__('pricing.select_btn')}}
+                                    <input type="hidden" name="no_meals" :value="this.weekCost">
+                                    <input type="hidden" name="meal_cost" :value="this.servingCost">
+                                    <input type="hidden" name="shipping_cost" :value="this.shippingCost">
+                                    <input type="hidden" name="total_cost" :value="this.total">
+                                    <button type="submit" class="plan_button_content">
+                                        {{__('pricing.select_btn')}}
                                     </button>
+                                    {{-- <button class="plan_button_content"
+                                        @click="subscribe({{$plan->id}})">{{__('pricing.select_btn')}}
+                                    </button> --}}
                                 </div>
-                            {{-- </form> --}}
+                            </form>
 
                         </div>
 
@@ -140,58 +149,21 @@
 
             <div class="row">
 
+                @foreach ($faqs as $faq)
                 <div class="col-sm-6 col-md-5 col-md-push-1 ml-auto">
 
                     <div class="pricing_question_section_faq_txt">
 
-                        <p class="pricing_question_section_faq_txt_question">{{__('pricing.question1')}}</p>
+                        <p class="pricing_question_section_faq_txt_question">{{$faq['title_'.App::getLocale()]}}</p>
 
                         <p class="pricing_question_section_txt">
-                            {{__('pricing.answer1')}}
-                        </p>
-
-                        <p class="pricing_question_section_faq_txt_question">{{__('pricing.question2')}}</p>
-
-                        <p class="pricing_question_section_txt">
-                            {{__('pricing.answer2')}}
-                        </p>
-
-                        <p class="pricing_question_section_faq_txt_question">{{__('pricing.question3')}}</p>
-
-                        <p class="pricing_question_section_txt">
-                            {{__('pricing.answer3')}}
+                            {{strip_tags($faq['content_'.App::getLocale()])}}
                         </p>
 
                     </div>
 
                 </div>
-
-                <div class="col-sm-6 col-md-5 col-md-push-1 mr-auto">
-
-                    <div class="pricing_question_section_faq_txt">
-
-                        <p class="pricing_question_section_faq_txt_question">{{__('pricing.question4')}}</p>
-
-                        <p class="pricing_question_section_txt">
-                            {{__('pricing.answer4')}}
-                        </p>
-
-                        <p class="pricing_question_section_faq_txt_question">{{__('pricing.question5')}}</p>
-
-                        <p class="pricing_question_section_txt">
-                            {{__('pricing.answer5')}}
-                        </p>
-
-                        <p class="pricing_question_section_faq_txt_question">{{__('pricing.question6')}}</p>
-
-                        <p class="pricing_question_section_txt">
-                            {{__('pricing.answer6')}}
-                        </p>
-
-                    </div>
-
-                </div>
-
+                @endforeach
             </div>
 
         </div>

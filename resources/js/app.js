@@ -5,6 +5,13 @@ window.Vue = require('vue');
 
 import BootstrapVue from 'bootstrap-vue'
 
+import VueProgressBar from 'vue-progressbar'
+Vue.use(VueProgressBar, {
+    color: 'rgb(143, 255, 199)',
+    failedColor: 'red',
+    height: '3px'
+  })
+
 import Swal from 'sweetalert2'
 window.swal = Swal;
 
@@ -59,6 +66,9 @@ Vue.component('cookbook', require('./components/cookbook'));
 Vue.component('testimonial_section', require('./components/testimonial_section'));
 
 Vue.component('recipe_plan', require('./components/recipe_plan'));
+
+Vue.component('price_show', require('./components/price_show'));
+
 
 const app = new Vue({
 

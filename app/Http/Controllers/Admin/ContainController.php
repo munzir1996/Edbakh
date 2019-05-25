@@ -130,7 +130,6 @@ class ContainController extends Controller
         $this->validate($request, [
             'name_en' => 'required',
             'name_ar' => 'required',
-            'picture' => 'required',
             'weight_ar' => 'required',
             'weight_en' => 'required',
         ]);

@@ -7,7 +7,7 @@ use App\Plan;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use Auth;
 class SubscribeController extends Controller
 {
     /**
@@ -71,13 +71,23 @@ class SubscribeController extends Controller
         $subscribe->no_meals  = $request->no_meals;
         $subscribe->ordered  = $request->ordered;
         
-        // Shows  message
-        if($subscribe->save()){
+        $checkSubscribe = Subscribe::where('user_id', Auth::user()->id)->get();
 
-            session()->flash('message', 'The subscribe has been added successfully');
+        if ($checkSubscribe == null) {
+            if($subscribe->save()){
+
+                session()->flash('message', 'The subscribe has been added successfully');
+                //Redirect to another page
+                return redirect()->route('subscribes.index');
+            }
+        } else {
+            session()->flash('message', 'User already subscribed');
             //Redirect to another page
 		    return redirect()->route('subscribes.index');
         }
+        
+        // Shows  message
+        
 
         session()->flash('message', 'Error the subscribe was not added');
         //Redirect to another page
@@ -90,9 +100,16 @@ class SubscribeController extends Controller
      * @param  \App\Subscribe  $subscribe
      * @return \Illuminate\Http\Response
      */
-    public function show(Subscribe $subscribe)
+    public function show($id)
     {
-        //
+        $subscribe = Subscribe::findOrFail($id);
+        
+        $active = 'subscribe';
+
+        $sub_active = 'subscribe_list';
+
+        return view('admin.subscribes.show', compact(['subscribe', 'active' , 'sub_active']));
+
     }
 
     /**

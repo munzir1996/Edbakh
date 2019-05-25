@@ -114,7 +114,7 @@
         <section class="start-price-panel">
             <div class="container text-center">
 
-                <img src="{{asset('files/img/box.jpg')}}">
+                <img src="{{asset('files/img/box.png')}}">
 
                 <div class="start-price-title">
 

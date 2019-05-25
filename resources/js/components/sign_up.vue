@@ -29,7 +29,7 @@
                 address:"",
                 city_id:"",
                 recipes:{},
-                dates:{},
+                // dates:{},
 
                 count:0,
                 meals:0,
@@ -75,7 +75,7 @@
                     console.log(response.data);
                     console.log(response.data.recipes);
                     console.log(response.data.dates);
-                    this.dates = response.data.dates;
+                    // this.dates = response.data.dates;
                     this.recipes = response.data.recipes;
                     this.meals = parseInt(this.$root.weekCost);
                     

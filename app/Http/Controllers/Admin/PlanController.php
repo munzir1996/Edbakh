@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Image;
 use App\Week;
+use Storage;
+use File;
 class PlanController extends Controller
 {
 
@@ -246,6 +248,7 @@ class PlanController extends Controller
     {
         $plan = Plan::findOrFail($id);
         
+        File::delete('public/uploads/'.$plan->image);
         // Shows .toaster message
         if($plan->delete()){
 

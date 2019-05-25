@@ -56,7 +56,7 @@
 
                     <div class="how_it_work_btn_container">
 
-                        <a href="#" class="btn_blue">{{__('global.start')}}</a>
+                        <a href="{{url('/'.App::getLocale().'/pricing')}}" class="btn_blue">{{__('global.start')}}</a>
 
                     </div>
 
@@ -128,7 +128,7 @@
 
                     <div class="how_it_work_btn_container">
 
-                        <a href="#" class="btn_blue">{{__('global.start')}}</a>
+                        <a href="{{url('/'.App::getLocale().'/pricing')}}" class="btn_blue">{{__('global.start')}}</a>
 
                     </div>
 
@@ -207,7 +207,7 @@
 
     <div class="how_it_work_btn_container">
 
-        <a href="#" class="btn_blue">{{__('global.start')}}</a>
+        <a href="{{url('/'.App::getLocale().'/pricing')}}" class="btn_blue">{{__('global.start')}}</a>
 
     </div>
 
@@ -259,7 +259,7 @@
 
                     <p>{{__('how.bottom_start')}}</p>
 
-                    <a href="#">{{__('global.start')}}</a>
+                    <a href="{{url('/'.App::getLocale().'/pricing')}}">{{__('global.start')}}</a>
 
                 </div>
 
@@ -286,7 +286,6 @@
                     @endforeach
                     
                     {{-- <li><a href="#"></a>{{__('how.question4')}}</li> --}}
-
                 </ul>
 
                 <!-- Questions -->
@@ -304,7 +303,7 @@
                     <i class="fas fa-phone fa-flip-horizontal"
                         style="color: #4AA047 !important; font-size: 20px !important;"></i>&nbsp;&nbsp;
 
-                    <a href="tel:9662345693">(966) 234693</a>
+                    <a href="tel:{{$setting->phone}}">{{$setting->phone}}</a>
 
                 </div>
 
@@ -313,7 +312,7 @@
                     <i class="fas fa-envelope"
                         style="color: #4AA047 !important; font-size: 20px !important;"></i>&nbsp;&nbsp;
 
-                    <a href="mailto:info@edbakh.com">info@edbakh.com</a>
+                    <a href="mailto:{{$setting->email}}">{{$setting->email}}</a>
 
                 </div>
 

@@ -72,7 +72,7 @@
                                                     </a>
                     
                                                     <button type="submit" class="btn red btn-sm btn-outline sbold uppercase">
-                                                        <i class="fa fa-edit">حذف</i>
+                                                        <i class="fa fa-trash">حذف</i>
                                                     </button>
                                                 </form>
                                             </td>
