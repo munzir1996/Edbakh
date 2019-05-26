@@ -155,5 +155,5 @@ Route::group(array('prefix' => Config::get('app.locale_prefix')), function() {
         
     });
 
-    Route::auth();
+    //Route::auth();
 });

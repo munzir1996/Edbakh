@@ -13,17 +13,26 @@
 
             return {
 
-                serve: 1,
+                serve: true,
+                hide:false
 
             }
 
         },
 
+        created() {
+            this.hide = !this.hide 
+        },
         methods: {
 
             changeServe(serve){
 
-                this.serve = serve;
+                if (serve === 2) {
+                    this.serve = true;    
+                } else {
+                    this.serve = false;
+                }
+                
 
             }
 

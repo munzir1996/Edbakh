@@ -27,7 +27,7 @@
     <div class="container-fluid">
         <div class="row">
 
-            <div class="col-md-12 m-auto">
+            <div class="col-md-12 m-auto" id="printable">
 
                 <div class="card">
 
@@ -78,17 +78,21 @@
                                       <div class="table-responsive">
                                         <table class="table">
                                           <tbody><tr>
-                                              <td>{{$subscribe->meal_cost}} ريال سعودي</td>
+                                              <td>{{$subscribe->meal_cost}}</td>
                                               <th>:المجموع الاولي</th>
                                           </tr>
                                           <tr>
-                                              <td>{{$subscribe->shipping_cost}} ريال سعودي</td>
+                                              <td>{{$subscribe->shipping_cost}}</td>
                                               <th>:الشحن</th>
                                           </tr>
                                           <tr>
-                                              <td>{{$subscribe->total_cost}} ريال سعودي</td>
+                                              <td>{{$subscribe->total_cost}}</td>
                                               <th>:المجموع</th>
                                           </tr>
+                                          <tr>
+                                                <td>ريال سعودي</td>
+                                                <th></th>
+                                            </tr>
                                         </tbody></table>
                                       </div>
                                     </div>
@@ -97,17 +101,17 @@
 
                     </div>
 
-                    <div class="card-footer text-center">
-
-                        <button type="submit" class="btn btn-primary">
-                                <i class="fa fa-print"></i> Print
-                        </button>
-
-                        <a href="{{route('subscribes.index')}}" class="btn btn-secondary">Cancel</a>
-
-                    </div>
                 </div>
 
+                <div class="card-footer text-center avoid-this">
+    
+                    <button type="submit" class="btn btn-primary print">
+                            <i class="fa fa-print"></i> Print
+                    </button>
+    
+                    <a href="{{route('subscribes.index')}}" class="btn btn-secondary">Cancel</a>
+    
+                </div>
             </div>
 
         </div>
@@ -117,3 +121,19 @@
 
 
 @endsection
+
+<!-- BEGIN SCRIPTS -->
+@section('scripts')
+<script src="{{ asset('public/vendor/js/jQuery.print.js') }}"></script>
+<script>
+    $(function() {
+        $("#printable").find('.print').on('click', function() {
+            $("#printable").print({
+                noPrintSelector : ".avoid-this",
+            })
+        });
+    });
+
+</script>
+@endsection
+<!-- END SCRIPTS -->

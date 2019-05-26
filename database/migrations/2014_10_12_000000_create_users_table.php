@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->unsignedInteger('phone');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->integer('role');
+            //$table->integer('role');
             $table->timestamp('last_seen')->nullable();
             $table->integer('activity')->default(1);
             $table->rememberToken();

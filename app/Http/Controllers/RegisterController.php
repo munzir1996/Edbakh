@@ -30,6 +30,7 @@ class RegisterController extends Controller
         $user->address  = $request->address;
         $user->password  = bcrypt($request->password);
         $user->phone  = $request->phone;
+        $user->role  = 0;
         $user->city_id  = $request->city_id;
 
         if ($user->save()) {

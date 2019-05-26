@@ -171,8 +171,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Unisharp\Ckeditor\ServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
-        Barryvdh\DomPDF\ServiceProvider::class,
-
+        Thujohn\Twitter\TwitterServiceProvider::class,
     ],
 
     /*
@@ -223,6 +222,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
+        'Twitter' => Thujohn\Twitter\Facades\Twitter::class,
 
     ],
 

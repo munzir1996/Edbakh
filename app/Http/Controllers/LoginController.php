@@ -24,7 +24,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
 
             if(App::getLocale() == 'ar') {
-
+               
                 return redirect(url('/ar'));
 
             }else {

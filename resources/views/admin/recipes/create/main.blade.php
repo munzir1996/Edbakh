@@ -2,7 +2,6 @@
 
 @section('content')
 
-
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -98,3 +97,21 @@
 
 
 @endsection
+
+<!-- BEGIN SCRIPTS -->
+@section('scripts')
+<script src="{{ asset('public/vendor/js/datatable.js') }}"></script>
+<script src="{{ asset('public/vendor/plugins/datatables/datatables.min.js') }}"></script>
+<script src="{{ asset('public/vendor/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js') }}"></script>
+<script>
+    //Datatable
+    $(document).ready(function () {
+        $('#ingredients-table').DataTable({
+            "paging":   false,
+            "ordering": false,
+            "info":     false,
+        });
+    });
+</script>
+@endsection
+<!-- END SCRIPTS -->

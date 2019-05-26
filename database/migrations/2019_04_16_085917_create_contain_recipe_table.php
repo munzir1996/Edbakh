@@ -20,6 +20,7 @@ class CreateContainRecipeTable extends Migration
             $table->unsignedInteger('contain_id');
             $table->foreign('contain_id')->references('id')->on('contains')->onDelete('cascade');
             $table->string('amount');
+            $table->boolean('include');
             $table->timestamps();
 
         });

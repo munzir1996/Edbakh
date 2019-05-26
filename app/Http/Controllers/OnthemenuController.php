@@ -83,6 +83,8 @@ class OnthemenuController extends Controller
     public function show($id)
     {
         $recipe = Recipe::findOrFail($id);
+        // $test = $recipe->contains->first();
+        // dd($test->pivot->amount);
         $instruction = Instruction::where('recipe_id', $id)->get();
 
         return view('recipe_opening', compact(['recipe', 'instruction',]));

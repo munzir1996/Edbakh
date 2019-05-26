@@ -66,7 +66,7 @@ trait AuthenticatesUsers
     {
         $request->validate([
             $this->username() => 'required',
-            'password' => 'required|string',
+            'password' => 'required',
         ]);
     }
 
@@ -145,7 +145,6 @@ trait AuthenticatesUsers
     public function username()
     {
         return 'phone';
-        //return 'email';
     }
 
     /**

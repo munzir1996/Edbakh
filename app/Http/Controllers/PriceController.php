@@ -99,6 +99,7 @@ class PriceController extends Controller
     public function show($id)
     {
         $recipes = Recipe::where('plan_id', $id)->get();
+        
         // $dates = Date::all();
         
         return(['recipes' => $recipes,]);

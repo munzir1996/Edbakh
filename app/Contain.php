@@ -17,6 +17,7 @@ class Contain extends Model
     ];
     
     public function recipes() {
-        return $this->belongsToMany(Recipe::class)->withPivot('amount');
+        return $this->belongsToMany(Recipe::class)->withPivot('amount', 'include');
     }
+    
 }

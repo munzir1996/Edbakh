@@ -74,8 +74,6 @@
                     console.log("response");
                     console.log(response.data);
                     console.log(response.data.recipes);
-                    console.log(response.data.dates);
-                    // this.dates = response.data.dates;
                     this.recipes = response.data.recipes;
                     this.meals = parseInt(this.$root.weekCost);
                     

@@ -9,6 +9,7 @@ return  [
     'time' => 'Preparation Time',
     'time_value' => 'minutes',
     'cooking_difficulty' => 'Cooking difficulty',
+    'not_included' => 'Not included in your delivery',
     'level' => 'Level',
     'tags' => 'Tags',
     'egg_free' => 'Egg free',

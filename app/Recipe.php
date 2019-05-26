@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Recipe extends Model
 {
-    const SHOW = true;
     /**
      * The attributes that are mass assignable.
      *
@@ -54,7 +53,7 @@ class Recipe extends Model
     }
 
     public function contains() {
-        return $this->belongsToMany(Contain::class)->withPivot('amount');
+        return $this->belongsToMany(Contain::class)->withPivot('amount', 'include');
     }
 
     public function stars(){

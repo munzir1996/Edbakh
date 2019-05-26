@@ -87,6 +87,8 @@ class RecipeController extends Controller
             'date_id' => 'required|integer',
         ]);
 
+        // dd($request);
+
         $recipe = new Recipe;
 
         $recipe->title_ar  = $request->title_ar;
@@ -120,10 +122,14 @@ class RecipeController extends Controller
             $recipe->puts()->sync($request->puts, false);
             $recipe->tags()->sync($request->tags, false);
 
-            $id=0;
-             foreach ($request->contains as $contain) {
-                $recipe->contains()->attach($contain, ['amount'=> $request->amounts[$id]]);
-                $id++;
+            // $id=0;
+             foreach ($request->contains as $index => $contain) {
+                 if ($request->amounts[$index] != null) {
+                     $recipe->contains()->attach($contain, ['amount'=> $request->amounts[$index], 
+                                                            'include'=> $request->includes[$index]]);
+                     # code...
+                 }
+                // $id++;
                 
             }
                 
@@ -262,8 +268,8 @@ class RecipeController extends Controller
                 $recipe->contains()->sync(array());
 
                 foreach ($request->contains as $index => $contain) {
-
-                    $recipe->contains()->attach($contain, ['amount'=> $request->amounts[$index]]);
+                    $recipe->contains()->attach($contain, ['amount'=> $request->amounts[$index], 
+                                                            'include'=> $request->includes[$index]]);
                                      
                 }
             } else {

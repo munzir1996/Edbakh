@@ -9,6 +9,7 @@ return  [
     'time' => 'زمن التحضير',
     'time_value' => 'دقيقه',
     'cooking_difficulty' => 'صعوبة الطهي',
+    'not_included' => 'غير المدرجة في التسليم الخاص بك',
     'level' => 'مستوى',
     'tags' => 'الاوسمة',
     'egg_free' => 'خالي من البيض',
